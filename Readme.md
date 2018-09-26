@@ -1,7 +1,7 @@
 # Личный проект «Кэт энерджи» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Анастасия Шишова](https://up.htmlacademy.ru/adaptive/15/user/830807).
-* Наставник: `Неизвестно`.
+* Наставник: [Макс Пушкарев](https://htmlacademy.ru/profile/id87167).
 
 ---
 
