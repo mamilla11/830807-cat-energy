@@ -11,10 +11,10 @@
           <a class="logo page-header__logo" href="index.html">
             <img class="logo__image" src="http://placehold.it/33x38"
                 width="33" height="38" alt="Логотип бренда CatEnergy">
+            <img class="logo__text logo__text--small"
+                src="http://placehold.it/101x18" width="101" height="18"
+                alt="Бренд CatEnergy">
           </a>
-          <img class="brand brand--small page-header__brand"
-              src="http://placehold.it/101x18" width="101" height="18"
-              alt="Бренд CatEnergy">
           <nav class="site-navigation page-header__navigation">
             <button class="site-navigation__button" type="button">
               Показать меню
@@ -22,17 +22,19 @@
             <div class="site-navigation__wrapper">
               <ul class="site-navigation__list">
                 <li class="site-navigation__item">
-                  <a class="site-navigation__link" href="index.html">
+                  <a class="site-navigation__link site-navigation__link--black"
+                     href="index.html">
                     Главная
                   </a>
                 </li>
                 <li class="site-navigation__item">
-                  <a class="site-navigation__link site-navigation__link--current" href="catalog.html">
+                  <a class="site-navigation__link site-navigation__link--black site-navigation__link--current">
                     Каталог продукции
                   </a>
                 </li>
                 <li class="site-navigation__item">
-                  <a class="site-navigation__link" href="form.html">
+                  <a class="site-navigation__link site-navigation__link--black"
+                     href="form.html">
                     Подбор программы
                   </a>
                 </li>
@@ -68,7 +70,7 @@
                     </tr>
                   </table>
                 </div>
-                <a class="button catalog__button" href="#">Заказать</a>
+                <a class="button button--green catalog__button" href="#">Заказать</a>
               </li>
               <li class="products__item product product--main">
                 <div class="product__container">
@@ -92,7 +94,7 @@
                     </tr>
                   </table>
                 </div>
-                <a class="button catalog__button" href="#">Заказать</a>
+                <a class="button button--green catalog__button" href="#">Заказать</a>
               </li>
               <li class="products__item product product--main">
                 <div class="product__container">
@@ -116,7 +118,7 @@
                     </tr>
                   </table>
                 </div>
-                <a class="button catalog__button" href="#">Заказать</a>
+                <a class="button button--green catalog__button" href="#">Заказать</a>
               </li>
               <li class="products__item product product--main">
                 <div class="product__container">
@@ -140,7 +142,7 @@
                     </tr>
                   </table>
                 </div>
-                <a class="button catalog__button" href="#">Заказать</a>
+                <a class="button button--green catalog__button" href="#">Заказать</a>
               </li>
               <li class="products__item product product--main">
                 <div class="product__container">
@@ -164,7 +166,7 @@
                     </tr>
                   </table>
                 </div>
-                <a class="button catalog__button" href="#">Заказать</a>
+                <a class="button button--green catalog__button" href="#">Заказать</a>
               </li>
               <li class="products__item product product--main">
                 <div class="product__container">
@@ -188,7 +190,7 @@
                     </tr>
                   </table>
                 </div>
-                <a class="button catalog__button" href="#">Заказать</a>
+                <a class="button button--green catalog__button" href="#">Заказать</a>
               </li>
               <li class="products__item product product--main">
                 <div class="product__container">
@@ -212,14 +214,14 @@
                     </tr>
                   </table>
                 </div>
-                <a class="button catalog__button" href="#">Заказать</a>
+                <a class="button button--green catalog__button" href="#">Заказать</a>
               </li>
             </ul>
             <div class="get-more catalog__get-more">
               <button class="button get-more__button" type="button">Показать еще</button>
               <p class="get-more__text">Показать еще 100500 товаров</p>
               <p class="get-more__extra-text">На самом деле вкусов гораздо больше!</p>
-              <a class="button get-more__link" href="#">Показать все</a>
+              <a class="button button--gray get-more__link" href="#">Показать все</a>
             </div>
             <h2 class="catalog__subtitle">Дополнительные товары</h2>
             <ul class="products catalog__products catalog__products-extra">
@@ -231,7 +233,7 @@
                     <td class="description__value">100 P</td>
                   </tr>
                 </table>
-                <a class="button catalog__button" href="#">Заказать</a>
+                <a class="button button--green catalog__button" href="#">Заказать</a>
               </li>
               <li class="products__item product product--extra">
                 <p class="product__name">Питьевая вода</p>
@@ -241,7 +243,7 @@
                     <td class="description__value">50 P</td>
                   </tr>
                 </table>
-                <a class="button catalog__button" href="#">Заказать</a>
+                <a class="button button--green catalog__button" href="#">Заказать</a>
               </li>
               <li class="products__item product product--extra">
                 <p class="product__name">Молоко</p>
@@ -251,7 +253,7 @@
                     <td class="description__value">100 P</td>
                   </tr>
                 </table>
-                <a class="button catalog__button" href="#">Заказать</a>
+                <a class="button button--green catalog__button" href="#">Заказать</a>
               </li>
               <li class="products__item product product--extra">
                 <p class="product__name">Витамины</p>
@@ -261,7 +263,7 @@
                     <td class="description__value">300 P</td>
                   </tr>
                 </table>
-                <a class="button catalog__button" href="#">Заказать</a>
+                <a class="button button--green catalog__button" href="#">Заказать</a>
               </li>
             </ul>
           </section>
@@ -285,9 +287,11 @@
       </main>
       <footer class="page-footer">
         <div class="content-container">
-          <img class="brand brand--large page-footer__brand"
-            src="http://placehold.it/128x24" width="128" height="24"
-            alt="Бренд CatEnergy">
+          <div class="logo page-footer__logo">
+            <img class="logo__text logo__text--large"
+                src="http://placehold.it/128x24" width="128" height="24"
+                alt="Бренд CatEnergy">
+          </div>
           <ul class="social page-footer__social">
             <li class="social__item">
               <a class="social__link social__link--vk" href="#"
