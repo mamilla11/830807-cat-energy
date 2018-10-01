@@ -1,0 +1,7 @@
+@import "variables.scss";
+@import "mixins.scss";
+
+body { 
+  background: #ffffff; 
+  @include text-style(14px, 18px);
+}
