@@ -1,0 +1,44 @@
+.page-header__logo {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.page-header__button {
+  position: relative;
+  padding: 0;
+  margin-left: 55px;
+  background-color: transparent;
+  cursor: pointer;
+
+  @include text-style(0,0);
+}
+
+.page-header__button--close {
+  width: 18px;
+  height: 18px;
+
+  &::before,
+  &::after {
+    position: absolute;
+    content: "";
+    top: 7px;
+    left: -3px;
+    width: 22px;
+    height: 2px;
+
+    background-color: $bg-black;
+  }
+
+  &::before {
+    transform: rotate(45deg);
+  }
+
+  &::after {
+    transform: rotate(-45deg);
+  }
+}
+
+.page-header__button--open {
+  width: 24px;
+  height: 18px;
+}
