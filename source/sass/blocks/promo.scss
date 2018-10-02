@@ -1,0 +1,32 @@
+.promo {
+  position: relative;
+  text-align: center;
+  &::before {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    content: "";
+    width: 100%;
+    height: 305px;
+    background-color: #63a73a;
+  }
+}
+
+.promo__title {
+  margin: 0 auto;
+  width: 280px;
+  color: $text-light;
+  @include text-style(36px, 36px);
+}
+
+.promo__tagline {
+  color: $text-light;
+  text-transform: uppercase;
+  @include text-style(14px, 14px);
+}
+
+.promo__button {
+  margin: 0 auto;
+  width: 100%;
+}

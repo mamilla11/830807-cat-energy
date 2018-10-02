@@ -6,16 +6,15 @@ $bg-gray:         #f2f2f2;
 $bg-gray-hover:   #ebebeb;
 $bg-gray-active:  #ebebeb;
 
-$text-light:        #ffffff;
-$text-light-hover:  #ffffff;
-$text-light-active: rgba(#ffffff, 0.3%);
+$text-light-hover:  $text-light;
+$text-light-active: rgba($text-light, 0.3%);
 
-$text-dark:         #444444;
-$text-dark-hover:   #444444;
-$text-dark-active:  rgba(#444444, 0.3%);
+$text-gray-hover:   $text-gray;
+$text-gray-active:  rgba($text-gray, 0.3%);
 
 .button {
   display: inline-block;
+  box-sizing: border-box;
   padding: 10px 15px 9px 15px;
   text-transform: uppercase;
   border: none; 
@@ -45,13 +44,13 @@ $text-dark-active:  rgba(#444444, 0.3%);
 
 .button--gray {
   background-color: $bg-gray;
-  color: $text-dark;
+  color: $text-gray;
   &:hover {
     background-color: $bg-gray-hover;
-    color: $text-dark-hover;
+    color: $text-gray-hover;
   }
   &:active {
     background-color: $bg-gray-active;
-    color: $text-dark-active;
+    color: $text-gray-active;
   }
 }

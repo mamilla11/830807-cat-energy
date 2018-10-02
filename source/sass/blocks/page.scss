@@ -1,0 +1,16 @@
+.page__body {
+  margin: 0;
+  padding: 0;
+  color: $text-gray;
+  font-family: "Arial", sans-serif;
+  @include text-style(14px, 18px);
+}
+
+.page__container {
+  width: 320px;
+  margin: 0 auto;
+}
+
+.page__content-container {
+  padding: 0 20px;
+}
