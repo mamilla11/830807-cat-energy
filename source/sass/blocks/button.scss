@@ -1,0 +1,57 @@
+$bg-green:        #68b738;
+$bg-green-hover:  #5eaa2f;
+$bg-green-active: #5eaa2f;
+
+$bg-gray:         #f2f2f2;
+$bg-gray-hover:   #ebebeb;
+$bg-gray-active:  #ebebeb;
+
+$text-light:        #ffffff;
+$text-light-hover:  #ffffff;
+$text-light-active: rgba(#ffffff, 0.3%);
+
+$text-dark:         #444444;
+$text-dark-hover:   #444444;
+$text-dark-active:  rgba(#444444, 0.3%);
+
+.button {
+  display: inline-block;
+  padding: 10px 15px 9px 15px;
+  text-transform: uppercase;
+  border: none; 
+  text-decoration: none;
+  text-align: center;
+  vertical-align: middle;
+  @include text-style(16px, 20px)
+}
+
+.button--small-text {
+  padding: 12px 15px 11px 15px;
+  @include text-style(14px, 18px)
+}
+
+.button--green {
+  background-color: $bg-green;
+  color: $text-light;
+  &:hover {
+    background-color: $bg-green-hover;
+    color: $text-light-hover;
+  }
+  &:active {
+    background-color: $bg-green-active;
+    color: $text-light-active;
+  }
+}
+
+.button--gray {
+  background-color: $bg-gray;
+  color: $text-dark;
+  &:hover {
+    background-color: $bg-gray-hover;
+    color: $text-dark-hover;
+  }
+  &:active {
+    background-color: $bg-gray-active;
+    color: $text-dark-active;
+  }
+}
