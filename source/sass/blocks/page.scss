@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   color: $text-gray;
-  font-family: "Arial", sans-serif;
+  font-family: $font-arial;
+
   @include text-style(14px, 18px);
 }
 

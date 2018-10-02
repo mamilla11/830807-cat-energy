@@ -1,41 +1,44 @@
-$bg-green:        #68b738;
-$bg-green-hover:  #5eaa2f;
+$bg-green-hover: #5eaa2f;
 $bg-green-active: #5eaa2f;
 
-$bg-gray:         #f2f2f2;
-$bg-gray-hover:   #ebebeb;
-$bg-gray-active:  #ebebeb;
+$bg-gray-hover: #ebebeb;
+$bg-gray-active: #ebebeb;
 
-$text-light-hover:  $text-light;
+$text-light-hover: $text-light;
 $text-light-active: rgba($text-light, 0.3%);
 
-$text-gray-hover:   $text-gray;
-$text-gray-active:  rgba($text-gray, 0.3%);
+$text-gray-hover: $text-gray;
+$text-gray-active: rgba($text-gray, 0.3%);
 
 .button {
   display: inline-block;
   box-sizing: border-box;
   padding: 10px 15px 9px 15px;
   text-transform: uppercase;
-  border: none; 
+  border: none;
   text-decoration: none;
   text-align: center;
   vertical-align: middle;
-  @include text-style(16px, 20px)
+  font-family: $font-oswald;
+
+  @include text-style(16px, 20px);
 }
 
 .button--small-text {
   padding: 12px 15px 11px 15px;
-  @include text-style(14px, 18px)
+
+  @include text-style(14px, 18px);
 }
 
 .button--green {
   background-color: $bg-green;
   color: $text-light;
+
   &:hover {
     background-color: $bg-green-hover;
     color: $text-light-hover;
   }
+
   &:active {
     background-color: $bg-green-active;
     color: $text-light-active;
@@ -45,10 +48,12 @@ $text-gray-active:  rgba($text-gray, 0.3%);
 .button--gray {
   background-color: $bg-gray;
   color: $text-gray;
+
   &:hover {
     background-color: $bg-gray-hover;
     color: $text-gray-hover;
   }
+
   &:active {
     background-color: $bg-gray-active;
     color: $text-gray-active;

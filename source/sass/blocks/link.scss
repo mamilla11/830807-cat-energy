@@ -1,0 +1,76 @@
+.link {
+  display: inline-block;
+  border: none;
+  background-color: transparent;
+  text-decoration: none;
+  text-transform: uppercase;
+  text-align: center;
+  vertical-align: middle;
+  font-family: $font-oswald;
+}
+
+.link--arrow {
+  position: relative;
+  color: $text-dark;
+
+  @include text-style(16px, 16px);
+
+  &:active {
+    color: rgba($text-dark, 0.3%);
+  }
+
+  &::after {
+    position: absolute;
+    top: 50%;
+    right: -48px;
+    content: "";
+    width: 24px;
+    height: 11px;
+    background-image: url("http://placehold.it/24x11");
+    transform: translateY(-50%);
+  }
+}
+
+.link--underline {
+  color: $text-dark;
+  padding: 5px 0;
+  border-bottom: 1px dotted $border-gray-darker;
+
+  @include text-style(16px, 20px);
+
+  &:hover {
+    border-bottom: 1px solid $border-gray-dark;
+  }
+
+  &:active {
+    border: none;
+  }
+}
+
+.link--dark {
+  color: $text-dark;
+
+  @include text-style(20px, 20px, 500);
+
+  &:hover {
+    color: rgba($text-dark, 0.6%);
+  }
+
+  &:active {
+    color: rgba($text-dark, 0.3%);
+  }
+}
+
+.link--light {
+  color: $text-light;
+
+  @include text-style(20px, 20px, 500);
+
+  &:hover {
+    color: rgba($text-light, 0.6%);
+  }
+
+  &:active {
+    color: rgba($text-light, 0.3%);
+  }
+}
