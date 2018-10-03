@@ -1,0 +1,25 @@
+.contacts__text {
+  display: flex;
+  margin-bottom: 12px;
+}
+
+.contacts__lead {
+  width: 50%;
+  font-family: $font-oswald;
+  text-transform: uppercase;
+  color: $text-dark;
+
+  @include text-style(16px, 20px);
+}
+
+.contacts__address {
+  width: 50%;
+
+  @include text-style(14px, 20px);
+}
+
+.contacts__map {
+  width: 320px;
+  min-height: 364px;
+  background: $bg-gray url("http://placehold.it/320x364") no-repeat;
+}
