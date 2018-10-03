@@ -1,0 +1,36 @@
+.statistic {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 10px 0 8px 0;
+}
+
+.statistic__item {
+  display: inline-block;
+  position: relative;
+  width: 120px;
+  padding-top: 12px;
+  padding-bottom: 14px;
+  border: 1px solid $border-gray-lighter;
+  border-radius: 5px;
+}
+
+.statistic__param {
+  position: absolute;
+  bottom: -15px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-transform: lowercase;
+  background-color: $bg-gray;
+  padding: 0 15px 0 15px;
+
+  @include text-style(12px, 12px);
+}
+
+.statistic__value {
+  font-family: $font-oswald;
+  text-transform: uppercase;
+  color: $text-dark;
+
+  @include text-style(24px, 24px);
+}
