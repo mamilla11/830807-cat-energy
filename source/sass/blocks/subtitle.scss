@@ -1,0 +1,8 @@
+.subtitle {
+  margin: 0;
+  padding: 30px 0 30px 0;
+  font-family: $font-oswald;
+  color: $text-dark;
+
+  @include text-style(24px, 24px);
+}

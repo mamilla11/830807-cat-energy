@@ -8,14 +8,16 @@
   <body class="page__body">
     <div class="page__container">
       <header class="page-header">
-        <div class="page__content-container">
-          <a class="logo page-header__logo" href="index.html">
-            <img class="logo--image" src="http://placehold.it/202x59"
-                width="202" height="59" alt="Логотип бренда CatEnergy">
-          </a>
-          <button class="button page-header__button page-header__button--close" type="button">
-            Mеню
-          </button>
+        <div class="page-header__wrapper">
+          <div class="page__content-container">
+            <a class="logo page-header__logo" href="index.html">
+              <img class="logo--image" src="http://placehold.it/202x59"
+                  width="202" height="59" alt="Логотип бренда CatEnergy">
+            </a>
+            <button class="button page-header__button page-header__button--close" type="button">
+              Mеню
+            </button>
+          </div>
         </div>
         <nav class="site-navigation page-header__navigation">
           <ul class="site-navigation__list">
@@ -91,7 +93,7 @@
                 </div>
               </section>
               <section class="form__contacts">
-                <h2 class="form__subtitle">Контактные данные (владельца кота)</h2>
+                <h2 class="subtitle form__subtitle">Контактные данные (владельца кота)</h2>
                 <div class="form__wrapper">
                   <label class="form__label" for="email">E-mail:*</label>
                   <input class="form__text-field form__text-field--email" type="email"
@@ -104,14 +106,14 @@
                 </div>
               </section>
               <section class="form__comment">
-                <h2 class="form__subtitle">Комментарий</h2>
+                <h2 class="subtitle form__subtitle">Комментарий</h2>
                 <textarea class="form__text-field form__text-field--multiline"
                           name="comment" id="comment"
                           placeholder="Расскажите обо всех повадках кота">
                 </textarea>
               </section>
               <section class="form__extra">
-                <h2 class="form__subtitle">Дпоплнительно</h2>
+                <h2 class="subtitle form__subtitle">Дополнительно</h2>
                 <div class="form__wrapper">
                   <label class="form__label form__label--checkbox" for="extra-sweetener">
                     Сахарозаменитель
