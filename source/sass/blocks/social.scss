@@ -1,0 +1,34 @@
+.social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 130px;
+  list-style: none;
+  padding: 0;
+  margin: 0 auto;
+}
+
+.social__item {
+  display: inline-block;
+  vertical-align: middle;
+
+  @include text-style(0, 0);
+}
+
+.social__item--vk {
+  width: 22px;
+  height: 12px;
+  background-image: url("http://placehold.it/22x12");
+}
+
+.social__item--inst {
+  width: 16px;
+  height: 16px;
+  background-image: url("http://placehold.it/16x16");
+}
+
+.social__item--fb {
+  width: 10px;
+  height: 19px;
+  background-image: url("http://placehold.it/10x19");
+}

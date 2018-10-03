@@ -1,0 +1,19 @@
+.page-footer {
+  background-color: $bg-gray;
+}
+
+.page-footer__logo {
+  padding: 32px 0 32px 0;
+  text-align: center;
+  border-bottom: 1px solid $border-gray-light;
+}
+
+.page-footer__social {
+  padding: 22px 0 22px 0;
+  text-align: center;
+  border-bottom: 1px solid $border-gray-light;
+}
+
+.page-footer__developer {
+  padding: 20px 0 20px 0;
+}
