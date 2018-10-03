@@ -30,6 +30,7 @@
   text-transform: uppercase;
   color: $text-dark;
   width: 74px;
+  margin-bottom: 0;
 
   @include text-style(16px, 20px);
 }
@@ -37,14 +38,19 @@
 .product__name--extra {
   color: $text-gray;
   width: 100%;
+  margin-bottom: 0;
 
   @include text-style(16px, 16px);
 }
 
 .product__description {
+  margin: 9px 0 9px 0;
+
   @include text-style(12px, 16px);
 }
 
 .product__description--extra {
+  margin: 9px 0 9px 0;
+
   @include text-style(14px, 14px);
 }

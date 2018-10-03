@@ -1,6 +1,15 @@
+.contacts--white {
+  background-color: $bg-white;
+}
+
+.contacts--gray {
+  background-color: $bg-gray;
+}
+
 .contacts__text {
   display: flex;
-  margin-bottom: 12px;
+  padding-top: 25px;
+  padding-bottom: 25px;
 }
 
 .contacts__lead {
@@ -8,12 +17,14 @@
   font-family: $font-oswald;
   text-transform: uppercase;
   color: $text-dark;
+  margin: 0;
 
   @include text-style(16px, 20px);
 }
 
 .contacts__address {
   width: 50%;
+  margin: 0;
 
   @include text-style(14px, 20px);
 }
