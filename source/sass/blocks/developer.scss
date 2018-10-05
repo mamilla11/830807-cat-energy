@@ -1,0 +1,16 @@
+.developer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+}
+
+.developer__name {
+  @include text-style(16px, 16px);
+}
+
+.developer__logo {
+  width: 27px;
+  height: 34px;
+}

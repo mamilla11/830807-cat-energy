@@ -1,0 +1,20 @@
+.special-offer {
+  margin: 40px 0 35px 0;
+  text-align: center;
+  background-color: $bg-green;
+}
+
+.special-offer__image {
+  margin: 0;
+  padding-top: 62px;
+}
+
+.special-offer__text {
+  margin: 0 auto;
+  padding-top: 58px;
+  padding-bottom: 40px;
+  color: $text-light;
+  width: 184px;
+
+  @include text-style(16px, 20px);
+}

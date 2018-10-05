@@ -1,0 +1,18 @@
+.catalog__title {
+  font-family: $font-oswald;
+  color: $text-dark;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid $border-gray-light;
+
+  @include text-style(36px, 60px);
+}
+
+.catalog__subtitle {
+  border-bottom: 1px solid $border-gray-light;
+}
+
+.catalog__button {
+  width: 100%;
+}

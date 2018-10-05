@@ -1,0 +1,15 @@
+.site-navigation__list {
+  @include list-reset();
+}
+
+.site-navigation__item {
+  padding: 20px;
+  text-align: center;
+  border-bottom: 1px solid $border-gray-light;
+}
+
+.site-navigation__link--current {
+  &::after {
+    display: block;
+  }
+}

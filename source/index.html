@@ -2,48 +2,46 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>Главная CatEnergy</title>
   </head>
   <body class="page__body">
-    <div class="page-container">
-      <div class="content-container">
-        <header class="page-header">
-          <a class="logo page-header__logo">
-            <img class="logo__image" src="http://placehold.it/33x38"
-                width="33" height="38" alt="Логотип бренда CatEnergy">
-            <img class="logo__text logo__text--small"
-                  src="http://placehold.it/101x18" width="101" height="18"
-                  alt="Бренд CatEnergy">
-          </a>
-          <nav class="site-navigation page-header__navigation">
-            <button class="site-navigation__button" type="button">
-              Показать меню
+    <div class="page__container">
+      <header class="page-header">
+        <div class="page-header__wrapper">
+          <div class="page__content-container">
+            <a class="logo page-header__logo">
+              <img class="logo--image" src="http://placehold.it/202x59"
+                  width="202" height="59" alt="Логотип бренда CatEnergy">
+            </a>
+            <button class="button page-header__button page-header__button--close" type="button">
+              Mеню
             </button>
-            <div class="site-navigation__wrapper">
-              <ul class="site-navigation__list">
-                <li class="site-navigation__item">
-                  <a class="site-navigation__link site-navigation__link--black site-navigation__link--current">
-                    Главная
-                  </a>
-                </li>
-                <li class="site-navigation__item">
-                  <a class="site-navigation__link site-navigation__link--black" href="catalog.html">
-                    Каталог продукции
-                  </a>
-                </li>
-                <li class="site-navigation__item">
-                  <a class="site-navigation__link site-navigation__link--black" href="form.html">
-                    Подбор программы
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </nav>
-        </header>
-      </div>
+          </div>
+        </div>
+        <nav class="site-navigation page-header__navigation">
+          <ul class="site-navigation__list">
+            <li class="site-navigation__item">
+              <a class="link link--dark site-navigation__link site-navigation__link--current">
+                Главная
+              </a>
+            </li>
+            <li class="site-navigation__item">
+              <a class="link link--dark site-navigation__link" href="catalog.html">
+                Каталог продукции
+              </a>
+            </li>
+            <li class="site-navigation__item">
+              <a class="link link--dark site-navigation__link" href="form.html">
+                Подбор программы
+              </a>
+            </li>
+          </ul>
+        </nav>
+      </header>
       <main>
         <section class="promo">
-          <div class="content-container">
+          <div class="page__content-container">
             <h1 class="promo__title">
               Функциональное питание для котов
             </h1>
@@ -52,12 +50,12 @@
             </p>
             <img class="promo__image" src="http://placehold.it/280x271"
                 width="280" height="271" alt="Изображение продукта бренда CatEnergy">
-            <a class="button button--green promo__button" href="form.html">
+            <a class="button button--small-text button--green promo__button" href="form.html">
               Подобрать программу
             </a>
           </div>
         </section>
-        <div class="content-container">
+        <div class="page__content-container">
           <section class="program">
             <h2 class="visually-hidden">Программы</h2>
             <ul class="program__list">
@@ -67,7 +65,7 @@
                   Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
                   Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.
                 </p>
-                <a class="button button--arrow program__link" href="#">Каталог Slim</a>
+                <a class="link link--arrow program__link" href="#">Каталог Slim</a>
               </li>
               <li class="program__item">
                 <h3 class="program__name">Набор массы</h3>
@@ -75,14 +73,14 @@
                   Заработать авторитет среди дворовых котов и даже собак?
                   Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!
                 </p>
-                <a class="button button--arrow program__link" href="#">Каталог Pro</a>
+                <a class="link link--arrow program__link" href="#">Каталог Pro</a>
               </li>
             </ul>
           </section>
         </div>
-        <div class="content-container">
+        <div class="page__content-container">
           <section class="feature">
-            <h2 class="title feature__title">Как это работает</h2>
+            <h2 class="feature__title">Как это работает</h2>
             <ul class="feature__list">
               <li class="feature__item">
                 Функциональное питание содержит только полезные питательные вещества.
@@ -100,8 +98,8 @@
           </section>
         </div>
         <section class="example">
-          <div class="content-container">
-            <h2 class="title example__title">Живой пример</h2>
+          <div class="page__content-container">
+            <h2 class="example__title">Живой пример</h2>
             <p class="example__story">
               Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim.
               Отличный результат без изнуряющих тренировок!
@@ -121,54 +119,56 @@
           </div>
           <img class="example__image" src="http://placehold.it/320x240"
                 width="320" height="240" alt="Фотография кота до диеты с CatEnergy">
-          <div class="content-container">
+          <div class="page__content-container">
             <div class="example__result">
-              <button class="button example__button example__button--before" type="button">
+              <button class="link link--underline example__button example__button--before" type="button">
                 Было
               </button>
               <span class="example__indicator"></span>
-              <button class="button example__button example__button--after" type="button">
+              <button class="link link--underline example__button example__button--after" type="button">
                 Стало
               </button>
             </div>
           </div>
         </section>
-        <section class="contacts">
+        <section class="contacts contacts--white">
           <h2 class="visually-hidden">Наши контакты</h2>
-          <div class="content-container">
-            <p class="contacts__lead">Приглашаем к сотрудничеству дилеров!</p>
+          <div class="page__content-container contacts__text">
+            <p class="contacts__lead">Приглашаем<br> к сотрудничеству дилеров!</p>
             <p class="contacts__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
           </div>
-          <div class="map" id="map"></div>
+          <div class="contacts__map map" id="map"></div>
         </section>
       </main>
       <footer class="page-footer">
-        <div class="content-container">
+        <div class="page__content-container">
           <div class="logo page-footer__logo">
-            <img class="logo__text logo__text--large"
-                src="http://placehold.it/128x24" width="128" height="24"
+            <img class="logo--text"
+                src="http://placehold.it/130x25" width="130" height="25"
                 alt="Бренд CatEnergy">
           </div>
-          <ul class="social page-footer__social">
-            <li class="social__item">
-              <a class="social__link social__link--vk" href="#"
-                  aria-label="Подписывайтесь на нас в ВКонтакте!">
-                В контакте
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--inst" href="#"
-                  aria-label="Подписывайтесь на нас в Инстаграмме!">
-                Instagram
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--fb" href="#"
-                  aria-label="Подписывайтесь на нас в Фейсбуке!">
-                Facebook
-              </a>
-            </li>
-          </ul>
+          <div class="page-footer__social">
+            <ul class="social">
+              <li class="social__item social__item--vk">
+                <a class="social__link" href="#"
+                    aria-label="Подписывайтесь на нас в ВКонтакте!">
+                  В контакте
+                </a>
+              </li>
+              <li class="social__item social__item--inst">
+                <a class="social__link" href="#"
+                    aria-label="Подписывайтесь на нас в Инстаграмме!">
+                  Instagram
+                </a>
+              </li>
+              <li class="social__item social__item--fb">
+                <a class="social__link" href="#"
+                    aria-label="Подписывайтесь на нас в Фейсбуке!">
+                  Facebook
+                </a>
+              </li>
+            </ul>
+          </div>
           <div class="developer page-footer__developer">
             <span class="developer__name">HTML Academy</span>
             <img class="developer__logo" src="http://placehold.it/27x34"
