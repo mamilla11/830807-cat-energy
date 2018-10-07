@@ -1,34 +1,94 @@
 .feature {
-  margin-bottom: 20px;
+  margin-bottom: 40px;
 }
 
 .feature__title {
   font-family: $font-oswald;
-  margin: 0 0 30px 0;
+  margin: 0 0 28px 0;
   color: $text-dark;
 
   @include text-style(36px, 60px);
 }
 
 .feature__list {
-  border-bottom: 1px solid transparent;
-
   @include list-reset();
 }
 
 .feature__item {
-  position: relative;
-  margin: 0 0 25px 0;
-  padding: 0 0 0 80px;
+  display: flex;
+  align-items: center;
+  margin: 20px 0;
+  padding: 0;
 
   &::before {
-    position: absolute;
-    left: 0;
-    top: 50%;
-    transform: translateY(-50%);
     content: "";
     width: 60px;
     height: 60px;
-    background: $bg-gray url("http://placehold.it/60x60") no-repeat;
+    margin-right: 20px;
+    background: $bg-green;
+    flex-shrink: 0;
+  }
+}
+
+@media (min-width: $width-tablet) {
+  .feature {
+    border-bottom: 1px solid $border-gray-light;
+  }
+
+  .feature__title {
+    margin: 0 0 50px 0;
+
+    @include text-style(60px, 60px);
+  }
+
+  .feature__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .feature__item {
+    flex-direction: column;
+    align-items: flex-start;
+    width: 46%;
+    padding-bottom: 95px;
+
+    @include text-style(16px, 24px);
+
+    &::before {
+      width: 80px;
+      height: 80px;
+      margin-bottom: 35px;
+    }
+  }
+
+  .feature__wrapper {
+    width: 77%;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .feature {
+    border-bottom: none;
+  }
+
+  .feature__list {
+    justify-content: flex-start;
+  }
+
+  .feature__item {
+    width: 244px;
+    margin-right: 76px;
+    padding-bottom: 40px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+
+  .feature__wrapper {
+    width: 100%;
   }
 }
