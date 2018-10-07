@@ -1,5 +1,6 @@
 .page-header {
-  position: relative;
+  margin-bottom: 20px;
+  border-bottom: 1px solid $border-gray-light;
 }
 
 .page-header__wrapper {
@@ -33,6 +34,11 @@
 }
 
 @media (min-width: $width-tablet) {
+  .page-header {
+    border: none;
+    margin-bottom: 0;
+  }
+
   .page-header__wrapper {
     display: flex;
     justify-content: space-between;
@@ -47,6 +53,13 @@
 
 @media (min-width: $width-desktop) {
   .page-header {
+    margin-bottom: 80px;
+  }
+
+  .page-header--main {
+    position: relative;
+    min-height: 696px;
+
     &::after {
       position: absolute;
       content: "";
