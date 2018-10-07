@@ -1,4 +1,6 @@
 .statistic {
+  width: 280px;
+  padding: 5px 0;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -21,7 +23,7 @@
   transform: translateX(-50%);
   text-transform: lowercase;
   background-color: $bg-gray;
-  padding: 0 15px 0 15px;
+  padding: 0 15px;
 
   @include text-style(12px, 12px);
 }
@@ -32,4 +34,35 @@
   color: $text-dark;
 
   @include text-style(24px, 24px);
+}
+
+@media (min-width: $width-tablet) {
+  .statistic {
+    width: 366px;
+  }
+
+  .statistic__item {
+    width: 162px;
+    padding-top: 14px;
+    padding-bottom: 20px;
+  }
+
+  .statistic__param {
+    padding: 0 5px;
+    bottom: -5px;
+    white-space: nowrap;
+    background-color: $bg-white;
+
+    @include text-style(14px, 14px);
+  }
+
+  .statistic__value {
+    @include text-style(30px, 37px);
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .statistic__param {
+    background-color: $bg-gray;
+  }
 }

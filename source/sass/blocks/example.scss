@@ -13,10 +13,12 @@
 }
 
 .example__story {
-  width: 268px;
+  padding-right: 5px;
+  margin: 20px 0;
 }
 
 .example__progress {
+  margin: 0 auto;
   text-align: center;
   padding: 10px 0 8px 0;
 }
@@ -33,16 +35,18 @@
 }
 
 .example__image {
-  display: inline-block;
-  vertical-align: middle;
-  margin-bottom: 25px;
+  display: block;
+  margin: 0 auto 25px auto;
   width: 320px;
   height: 240px;
 }
 
 .example__result {
   text-align: center;
-  margin-bottom: 8px;
+  margin: 0 auto 8px auto;
+  display: flex;
+  justify-content: space-between;
+  width: 198px;
 }
 
 .example__button--before {
@@ -51,4 +55,104 @@
 
 .example__button--after {
   margin-left: 56px;
+}
+
+@media (min-width: $width-tablet) {
+  .example {
+    padding-top: 5px;
+    padding-bottom: 60px;
+    background-color: $bg-white;
+    background-image: linear-gradient(to bottom, #ffffff 55%, $bg-gray 55%);
+  }
+
+  .example__title {
+    margin: 0 0 65px 0;
+
+    @include text-style(60px, 60px);
+  }
+
+  .example__story {
+    padding-right: 20px;
+    margin-bottom: 44px;
+
+    @include text-style(16px, 24px);
+  }
+
+  .example__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 100px;
+  }
+
+  .example__progress {
+    margin: 0;
+  }
+
+  .example__cost {
+    width: 192px;
+    text-align: right;
+    margin-top: 0;
+    margin-bottom: 0;
+
+    @include text-style(20px, 20px);
+  }
+
+  .example__image {
+    width: 677px;
+    height: 499px;
+    margin: 0 auto 46px auto;
+  }
+
+  .example__result {
+    width: 570px;
+  }
+
+  .example__button {
+    @include text-style(20px, 20px);
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .example {
+    padding-bottom: 0;
+    background-image: linear-gradient(to bottom, #ffffff 23%, $bg-gray 23%);
+  }
+
+  .example__title {
+    margin: 0 0 146px 0;
+  }
+
+  .example__story {
+    width: 438px;
+    margin-bottom: 64px;
+  }
+
+  .example__wrapper {
+    display: block;
+    margin-bottom: 75px;
+  }
+
+  .example__cost {
+    width: 438px;
+    text-align: left;
+    margin-top: 55px;
+  }
+
+  .example__image {
+    margin: -44px -30px 46px -40px;
+  }
+
+  .example__result {
+    margin: 0 0 8px auto;
+    text-align: right;
+  }
+
+  .example__columns {
+    display: flex;
+  }
+
+  .example__column {
+    width: 50%;
+  }
 }
