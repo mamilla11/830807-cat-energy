@@ -17,3 +17,27 @@
 .page-footer__developer {
   padding: 20px 0 20px 0;
 }
+
+@media (min-width: $width-tablet) {
+  .page-footer__wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 60px 0 54px 0;
+  }
+
+  .page-footer__logo {
+    border-bottom: none;
+    padding: 0;
+  }
+
+  .page-footer__social {
+    border-bottom: none;
+    padding: 0;
+  }
+
+  .page-footer__developer {
+    padding: 0;
+    flex-shrink: 0;
+  }
+}
