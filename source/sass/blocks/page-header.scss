@@ -63,11 +63,12 @@
     &::after {
       position: absolute;
       content: "";
-      width: 720px;
+      width: 50%;
       height: 696px;
       top: 0;
       right: 0;
       background: $bg-green url("../../img/index-background-desktop@1x.jpg") no-repeat center;
+      background-size: cover;
       z-index: 0;
     }
   }
