@@ -18,3 +18,10 @@
 
   @include text-style(16px, 20px);
 }
+
+@media (min-width: $width-desktop){
+  .special-offer {
+    margin: 0;
+    width: 245px;
+  }
+}
