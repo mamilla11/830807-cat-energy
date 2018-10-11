@@ -2,14 +2,6 @@
   font-family: $font-oswald;
 }
 
-.form__title {
-  color: $text-dark;
-  margin: 0;
-  padding: 20px 0;
-
-  @include text-style(36px, 60px);
-}
-
 .form__subtitle--comment {
   padding-top: 14px;
 }

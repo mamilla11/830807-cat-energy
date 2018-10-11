@@ -1,28 +1,29 @@
+.catalog {
+  display: block;
+}
+
 .catalog__title {
-  font-family: $font-oswald;
-  color: $text-dark;
-  margin: 0;
-  padding-top: 20px;
-  padding-bottom: 22px;
   border-bottom: 1px solid $border-gray-light;
-
-  @include text-style(36px, 60px);
-}
-
-.catalog__products {
-  @include list-reset();
-}
-
-.catalog__addons {
-  @include list-reset();
 }
 
 .catalog__subtitle {
-  padding: 30px 0;
   border-bottom: 1px solid $border-gray-light;
 }
 
+.catalog__addons {
+  margin: 0 20px;
+}
+
+.catalog__offer {
+  margin: 40px 0 35px 0;
+}
+
 @media (min-width: $width-tablet) {
+  .catalog {
+    margin: 0 auto;
+    padding: 0 30px;
+  }
+
   .catalog__title {
     border-bottom: none;
 
@@ -35,28 +36,74 @@
     border-bottom: none;
   }
 
-  .catalog__products {
+  .catalog__addons {
+    margin: 0;
+  }
+
+  .catalog__products-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: stretch;
     align-content: stretch;
   }
+
+  .catalog__item {
+    padding: 0 5% 40px 5%;
+    border-bottom: none;
+    width: 37%;
+    margin-top: 140px;
+    background-color: $bg-gray;
+    border: 1px solid $bg-gray;
+  }
+
+  .catalog__item--white {
+    background-color: $bg-white;
+  }
+
+  .catalog__offer {
+    margin: 68px 0 76px 0;
+  }
 }
 
 @media (min-width: $width-desktop) {
-  .catalog__products {
+  .catalog {
+    max-width: $width-desktop;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+
+  .catalog__products-container {
     justify-content: flex-start;
+  }
+
+  .catalog__addons {
+    margin-bottom: 86px;
+  }
+
+  .catalog__addons-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
   }
 
   .catalog__subtitle {
     padding-top: 45px;
   }
 
-  .catalog__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding-bottom: 86px;
+  .catalog__item {
+    display: block;
+    padding: 0 38px 40px 38px;
+    width: 167px;
+    margin-right: 80px;
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+  }
+
+  .catalog__offer {
+    margin: 0;
   }
 }

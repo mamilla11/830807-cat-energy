@@ -13,16 +13,16 @@
 }
 
 @media (min-width: $width-tablet) {
-  .description--addon {
+  .description--oneline {
     width: 230px;
     margin-bottom: 0;
   }
-  
+
   .description__item {
     border-bottom: 1px solid $border-gray-lighter;
   }
 
-  .description__item--addon {
+  .description__item--oneline {
     border-bottom: none;
   }
 

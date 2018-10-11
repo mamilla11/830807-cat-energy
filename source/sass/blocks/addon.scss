@@ -1,0 +1,80 @@
+.addon {
+  padding-bottom: 18px;
+  border-bottom: 1px solid $border-gray-light;
+}
+
+.addon__name {
+  font-family: $font-oswald;
+  text-transform: uppercase;
+  color: $text-gray;
+  width: 100%;
+  margin-top: 13px;
+  margin-bottom: 12px;
+
+  @include text-style(16px, 16px);
+}
+
+.addon__description {
+  margin-bottom: 11px;
+
+  @include text-style(14px, 14px);
+}
+
+.addon__button {
+  width: 100%;
+}
+
+@media (min-width: $width-tablet) {
+  .addon {
+    padding: 15px 36px 25px 36px;
+    border: 1px solid $border;
+  }
+
+  .addon__info {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  .addon__name {
+    width: 166px;
+    text-align: left;
+    margin-top: 10px;
+
+    @include text-style(20px, 20px);
+  }
+
+  .addon__description {
+    margin-bottom: 0;
+
+    @include text-style(16px, 20px);
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .addon {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 0;
+    border-left: none;
+    border-right: none;
+    width: 895px;
+  }
+
+  .addon__info {
+    width: 610px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .addon__description {
+    width: 285px;
+  }
+
+  .addon__button {
+    width: 245px;
+  }
+}

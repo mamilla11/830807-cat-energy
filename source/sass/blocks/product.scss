@@ -1,14 +1,10 @@
 .product {
+  padding: 0 20px;
   padding-bottom: 25px;
   border-bottom: 1px solid $border-gray-light;
 }
 
-.product-addon {
-  padding-bottom: 18px;
-  border-bottom: 1px solid $border-gray-light;
-}
-
-.product__wrapper {
+.product__info {
   display: flex;
   align-items: center;
 }
@@ -36,46 +32,16 @@
   width: 100%;
 }
 
-.product__name--extra {
-  color: $text-gray;
-  width: 100%;
-  margin-bottom: 0;
-
-  @include text-style(16px, 16px);
-}
-
 .product__description {
   margin: 9px 0;
 
   @include text-style(12px, 16px);
 }
 
-.product__description--extra {
-  margin: 9px 0;
-
-  @include text-style(14px, 14px);
-}
-
 @media (min-width: $width-tablet) {
   .product {
     position: relative;
-    padding: 156px 5% 40px 5%;
-    border-bottom: none;
-    width: 37%;
-    margin-top: 140px;
-    background-color: $bg-gray;
-  }
-
-  .product-addon {
-    padding: 15px 38px 25px 38px;
-    border: 1px solid $bg-gray;
-  }
-
-  .product-addon__wrapper {
-    display: flex;
-    justify-content: space-between;
-    align-items: baseline;
-    margin-bottom: 15px;
+    padding: 0;
   }
 
   .product__details {
@@ -87,15 +53,10 @@
   .product__name {
     width: 132px;
     text-align: center;
-    margin-top: 0;
+    margin-top: 160px;
     margin-bottom: 12px;
 
     @include text-style(20px, 20px);
-  }
-
-  .product__name--extra {
-    width: 166px;
-    text-align: left;
   }
 
   .product__description {
@@ -115,41 +76,11 @@
 }
 
 @media (min-width: $width-desktop) {
-  .product {
-    padding: 156px 38px 40px 38px;
-    width: 164px;
-    margin-right: 80px;
-
-    &:nth-child(4n) {
-      margin-right: 0;
-    }
-  }
-
-  .product-addon {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    padding: 12px 0;
-    border-left: none;
-    border-right: none;
-    width: 895px;
-  }
-
-  .product-addon__wrapper {
-    width: 610px;
-    margin-bottom: 0;
-    flex-shrink: 0;
-  }
-
   .product__image {
     top: -50px;
     left: 50%;
     transform: translateX(-50%);
     width: 245px;
     height: 172px;
-  }
-
-  .product__button--addon {
-    width: 245px;
   }
 }

@@ -1,7 +1,9 @@
-.get-more {
+.show-more {
   position: relative;
   text-align: center;
   background-color: $bg-white;
+  padding: 0 20px 25px 20px;
+  border-bottom: 1px solid $border-gray-light;
 
   &::before {
     position: absolute;
@@ -15,35 +17,37 @@
   }
 }
 
-.get-more__text {
+.show-more__text {
+  margin: 0 auto;
+}
+
+.show-more__text--large {
   color: $text-dark;
   font-family: $font-oswald;
   text-transform: uppercase;
-  padding-top: 80px;
-  padding-bottom: 10px;
-  margin: 0;
+  padding: 80px 0 10px 0;
 
   @include text-style(16px, 20px);
 }
 
-.get-more__text--extra {
+.show-more__text--small {
   color: $text-gray;
   font-family: $font-arial;
-  text-transform: none;
   padding: 0 0 20px 0;
 
   @include text-style(12px, 16px);
 }
 
-.get-more__link {
+.show-more__button {
   display: inline-block;
   vertical-align: middle;
   width: 100%;
 }
 
 @media (min-width: $width-tablet) {
-  .get-more {
-    border: 1px solid $bg-gray;
+  .show-more {
+    border-bottom: none;
+    padding: 0;
 
     &::before {
       top: 55px;
@@ -51,11 +55,10 @@
       height: 60px;
       background-image: url("http://placehold.it/60x60");
     }
-}
+  }
 
-
-  .get-more__text {
-    padding-top: 0;
+  .show-more__text--large {
+    padding-top: 160px;
     padding-bottom: 25px;
     width: 138px;
     margin: 0 auto;
@@ -63,14 +66,14 @@
     @include text-style(20px, 20px);
   }
 
-  .get-more__text--extra {
+  .show-more__text--small {
     padding-bottom: 82px;
     width: 176px;
 
     @include text-style(16px, 20px);
   }
-}
 
-@media (min-width: $width-desktop) {
-  
+  .show-more__button {
+    margin-top: auto;
+  }
 }
