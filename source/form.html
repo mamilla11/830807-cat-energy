@@ -109,39 +109,43 @@
                         name="comment" id="comment" placeholder="Расскажите обо всех повадках кота"></textarea>
             </section>
             <section class="form__extra">
-              <h2 class="heading heading--subtitle form__subtitle">Дополнительно</h2>
-              <div class="form__wrapper">
-                <label class="form__label form__label--checkbox" for="extra-sweetener">
-                  Сахарозаменитель
-                </label>
-                <input class="form__checkbox visually-hidden" type="checkbox"
-                      id="extra-sweetener" name="extra-sweetener" checked>
-              </div>
-              <div class="form__wrapper">
-                <label class="form__label form__label--checkbox" for="extra-water">
-                  Питьевая вода
-                </label>
-                <input class="form__checkbox visually-hidden" type="checkbox"
-                        id="extra-water" name="extra-water">
-              </div>
-              <div class="form__wrapper">
-                <label class="form__label form__label--checkbox" for="extra-milk">
-                  Молоко
-                </label>
-                <input class="form__checkbox visually-hidden" type="checkbox"
-                        id="extra-milk" name="extra-milk">
-              </div>
-              <div class="form__wrapper">
-                <label class="form__label form__label--checkbox" for="extra-vitamins">
-                  Витамины
-                </label>
-                <input class="form__checkbox visually-hidden" type="checkbox"
-                        id="extra-vitamins" name="extra-vitamins">
+              <h2 class="heading heading--subtitle form__subtitle form__subtitle--extra">Дополнительно</h2>
+              <div class="form__extra-wrapper">
+                <div class="form__wrapper">
+                  <label class="form__label form__label--checkbox" for="extra-sweetener">
+                    Сахарозаменитель
+                  </label>
+                  <input class="form__checkbox visually-hidden" type="checkbox"
+                        id="extra-sweetener" name="extra-sweetener" checked>
+                </div>
+                <div class="form__wrapper">
+                  <label class="form__label form__label--checkbox" for="extra-water">
+                    Питьевая вода
+                  </label>
+                  <input class="form__checkbox visually-hidden" type="checkbox"
+                          id="extra-water" name="extra-water">
+                </div>
+                <div class="form__wrapper">
+                  <label class="form__label form__label--checkbox" for="extra-milk">
+                    Молоко
+                  </label>
+                  <input class="form__checkbox visually-hidden" type="checkbox"
+                          id="extra-milk" name="extra-milk">
+                </div>
+                <div class="form__wrapper">
+                  <label class="form__label form__label--checkbox" for="extra-vitamins">
+                    Витамины
+                  </label>
+                  <input class="form__checkbox visually-hidden" type="checkbox"
+                          id="extra-vitamins" name="extra-vitamins">
+                </div>
               </div>
             </section>
-            <input class="button button--green form__button" type="submit"
-                  name="send-form" id="send-form" value="Отправить заявку">
-            <p class="form__tip">* — Обязательные поля</p>
+            <div class="form__submit">
+              <input class="button button--green form__button" type="submit"
+                    name="send-form" id="send-form" value="Отправить заявку">
+              <p class="form__tip">* — Обязательные поля</p>
+            </div>
           </form>
         </section>
       </div>
