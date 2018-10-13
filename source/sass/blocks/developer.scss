@@ -14,3 +14,9 @@
   width: 27px;
   height: 34px;
 }
+
+@media (min-width: $width-tablet) {
+  .developer__name {
+    margin-right: 20px;
+  }
+}

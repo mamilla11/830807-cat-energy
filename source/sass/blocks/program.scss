@@ -3,6 +3,7 @@
 }
 
 .program__item {
+  position: relative;
   padding: 28px 30px 20px 20px;
   margin-bottom: 20px;
   background-color: $bg-gray;
@@ -26,7 +27,7 @@
     content: "";
     width: 50px;
     height: 50px;
-    background: $bg-gray url("http://placehold.it/50x50") no-repeat;
+    background: $bg-green;
     border-radius: 50%;
   }
 }
@@ -39,4 +40,78 @@
   font-family: $font-arial;
 
   @include text-style(14px, 18px);
+}
+
+@media (min-width: $width-tablet) {
+  .program__item {
+    padding: 75px 283px 64px 52px;
+    margin-bottom: 30px;
+
+    &::after {
+      position: absolute;
+      right: 60px;
+      top: 92px;
+      content: "";
+      width: 200px;
+      height: 200px;
+      background: $bg-green;
+      border-radius: 50%;
+    }
+  }
+
+  .program__name {
+    padding-left: 0;
+
+    @include text-style(36px, 37px);
+
+    &::before {
+      display: none;
+    }
+  }
+
+  .program__description {
+    border-bottom: none;
+    margin-bottom: 35px;
+
+    @include text-style(16px, 24px);
+  }
+
+  .program__link {
+    @include text-style(20px, 20px);
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .program__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: stretch;
+    align-content: stretch;
+  }
+
+  .program__item {
+    max-width: 560px;
+    padding: 75px 60px 64px 52px;
+    box-sizing: border-box;
+
+    &::after {
+      display: none;
+    }
+  }
+
+  .program__name {
+    margin-bottom: 72px;
+    padding-left: 164px;
+
+    &::before {
+      display: block;
+      width: 100px;
+      height: 100px;
+    }
+  }
+
+  .program__description {
+    margin-bottom: 10px;
+  }
 }

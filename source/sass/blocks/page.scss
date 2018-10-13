@@ -1,4 +1,4 @@
-.page__body {
+.page {
   margin: 0;
   padding: 0;
   color: $text-gray;
@@ -8,10 +8,21 @@
 }
 
 .page__container {
-  width: 320px;
+  min-width: $width-mobile;
+  padding: 0 20px;
   margin: 0 auto;
+  box-sizing: border-box;
 }
 
-.page__content-container {
-  padding: 0 20px;
+@media (min-width: $width-tablet) {
+  .page__container {
+    padding: 0 30px;
+  }
+}
+
+@media (min-width: $width-desktop) {
+  .page__container {
+    max-width: $width-desktop;
+    padding: 0 40px;
+  }
 }

@@ -7,6 +7,7 @@
   text-align: center;
   vertical-align: middle;
   font-family: $font-oswald;
+  cursor: pointer;
 }
 
 .link--arrow {
@@ -44,56 +45,5 @@
 
   &:active {
     border: none;
-  }
-}
-
-.link--dark {
-  position: relative;
-  color: $text-dark;
-
-  @include text-style(20px, 20px, 500);
-
-  &:hover {
-    color: rgba($text-dark, 0.6%);
-  }
-
-  &:active {
-    color: rgba($text-dark, 0.3%);
-  }
-
-  &::after {
-    display: none;
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    content: "";
-    width: 100%;
-    height: 2px;
-    background-color: $bg-green;
-  }
-}
-
-.link--light {
-  color: $text-light;
-
-  @include text-style(20px, 20px, 500);
-
-  &:hover {
-    color: rgba($text-light, 0.6%);
-  }
-
-  &:active {
-    color: rgba($text-light, 0.3%);
-  }
-
-  &::after {
-    display: none;
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    content: "";
-    width: 100%;
-    height: 2px;
-    background-color: $bg-white;
   }
 }
