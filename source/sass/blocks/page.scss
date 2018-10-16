@@ -12,16 +12,12 @@
   padding: 0 20px;
   margin: 0 auto;
   box-sizing: border-box;
-}
 
-@media (min-width: $width-tablet) {
-  .page__container {
+  @media (min-width: $width-tablet) {
     padding: 0 30px;
   }
-}
 
-@media (min-width: $width-desktop) {
-  .page__container {
+  @media (min-width: $width-desktop) {
     max-width: $width-desktop;
     padding: 0 40px;
   }

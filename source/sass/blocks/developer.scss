@@ -7,6 +7,9 @@
 }
 
 .developer__name {
+  text-decoration: none;
+  color: inherit;
+
   @include text-style(16px, 16px);
 }
 
