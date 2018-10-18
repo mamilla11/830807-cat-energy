@@ -18,6 +18,20 @@
   align-items: center;
   padding-top: 29px;
   padding-bottom: 25px;
+
+  @media (min-width: $width-tablet) {
+    padding: 60px 40px 60px 40px;
+  }
+
+  @media (min-width: $width-desktop) {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: $bg-white;
+    width: 570px;
+    box-sizing: border-box;
+    padding: 54px 84px 60px 76px;
+  }
 }
 
 .contacts__lead {
@@ -28,6 +42,12 @@
   margin: 0;
 
   @include text-style(16px, 20px);
+
+  @media (min-width: $width-tablet) {
+    width: 160px;
+  
+    @include text-style(20px, 25px);
+  }
 }
 
 .contacts__address {
@@ -36,6 +56,24 @@
   text-align: left;
 
   @include text-style(14px, 20px);
+
+  @media (min-width: $width-tablet) {
+    width: 160px;
+    text-align: right;
+  
+    @include text-style(16px, 20px);
+  }
+
+  @media (min-width: $width-desktop) {
+    text-align: left;
+  }
+}
+
+.contacts__street {
+  @media (min-width: $width-tablet) {
+    display: block;
+    margin-bottom: 20px;
+  }
 }
 
 .contacts__map {
@@ -47,58 +85,22 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/bg-map-mobile@2x.png");
   }
-}
 
-@media (min-width: $width-tablet) {
-  .contacts__text {
-    padding: 60px 40px 60px 40px;
-  }
-
-  .contacts__lead {
-    width: 160px;
-
-    @include text-style(20px, 25px);
-  }
-
-  .contacts__address {
-    width: 160px;
-    text-align: right;
-
-    @include text-style(16px, 20px);
-  }
-
-  .contacts__street {
-    display: block;
-    margin-bottom: 20px;
-  }
-
-  .contacts__map {
+  @media (min-width: $width-tablet) {
     height: 394px;
-    background-image: url("../../img/bg-map-tablet@1x.png");
-  }
-}
+    background-image: url("../img/bg-map-tablet@1x.png");
 
-@media (min-width: $width-desktop) {
-  .contacts {
-    position: relative;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-tablet@2x.png");
+    }
   }
 
-  .contacts__map {
+  @media (min-width: $width-desktop) {
     height: 402px;
-    background-image: url("../../img/bg-map-desktop@1x.png");
-  }
+    background-image: url("../img/bg-map-desktop@1x.png");
 
-  .contacts__text {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    background-color: $bg-white;
-    width: 570px;
-    box-sizing: border-box;
-    padding: 54px 84px 60px 76px;
-  }
-
-  .contacts__address {
-    text-align: left;
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/bg-map-desktop@2x.png");
+    }
   }
 }

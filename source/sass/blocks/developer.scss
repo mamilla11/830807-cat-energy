@@ -11,15 +11,13 @@
   color: inherit;
 
   @include text-style(16px, 16px);
+
+  @media (min-width: $width-tablet) {
+    margin-right: 20px;
+  }
 }
 
 .developer__logo {
   width: 27px;
   height: 34px;
-}
-
-@media (min-width: $width-tablet) {
-  .developer__name {
-    margin-right: 20px;
-  }
 }
