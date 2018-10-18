@@ -1,6 +1,7 @@
 .description {
   width: 100%;
   border-collapse: collapse;
+  margin: 0;
 
   @media (min-width: $width-tablet) {
     &--oneline {

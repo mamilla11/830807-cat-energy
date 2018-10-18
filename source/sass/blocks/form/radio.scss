@@ -1,68 +1,76 @@
-.input {
-  display: flex;
-  align-items: baseline;
-  margin-bottom: 15px;
-  text-transform: uppercase;
-
-  @media (min-width: $width-tablet) {
-    margin-bottom: 22px;
-  }
-}
-
-.input__label {
+.radio {
   color: $text-darker;
-  white-space: nowrap;
-  padding: 13px 0 12px 0;
-
-  @include text-style(16px, 18px);
+  font-family: $font-oswald;
+  text-transform: uppercase;
+  margin-top: 25px;
 
   @media (min-width: $width-tablet) {
-    @include text-style(20px, 20px);
+    margin-top: 31px;
   }
 }
 
-.input__field {
-  flex-grow: 1;
-  color: $text-gray;
-  margin-left: 12px;
-  padding: 13px;
+.radio__label {
+  white-space: nowrap;
+  position: relative;
+  padding: 4px 0 4px 45px;
+  cursor: pointer;
 
   @include text-style(16px, 18px);
 
-  &::placeholder {
-    text-transform: uppercase;
-    font-family: $font-oswald;
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 9px;
+    transform: translateY(-50%);
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 8px white,
+      0 0 0 9px $radio-border-idle;
+  }
 
-    @include text-style(16px, 18px);
+  &:hover::before {
+    box-shadow: 0 0 0 8px white,
+      0 0 0 9px $radio-border-hover;
+  }
+
+  &:active,
+  &:focus {
+    opacity: 0.3;
   }
 
   @media (min-width: $width-tablet) {
-    margin-left: 18px;
-    padding: 12px 15px;
+    padding-left: 56px;
 
     @include text-style(20px, 20px);
 
-    &::placeholder {
-      @include text-style(20px, 20px);
-    }
-  }
-
-  @media (min-width: $width-tablet) {
-    &--email {
-      margin-left: 20px;
-      padding: 11px 40px 11px 18px;
+    &::before {
+      width: 18px;
+      height: 18px;
+      box-shadow: 0 0 0 10px white,
+        0 0 0 11px $radio-border-idle;
     }
 
-    &--phone {
-      margin-left: 14px;
-      padding: 11px 40px 11px 18px;
+    &:hover::before {
+      box-shadow: 0 0 0 10px white,
+        0 0 0 11px $radio-border-hover;
     }
   }
 
   @media (min-width: $width-desktop) {
-    &--email,
-    &--phone {
-      width: 485px;
+    padding-left: 46px;
+
+    &::before {
+      left: 0;
     }
   }
+}
+
+.radio__button:checked + .radio__label::before {
+  background-color: $bg-green;
+}
+
+.radio__button:focus + .radio__label {
+  outline: 1px dotted $radio-border-hover;
 }

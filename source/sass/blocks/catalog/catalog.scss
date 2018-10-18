@@ -45,7 +45,7 @@
   @media (min-width: $width-tablet) {
     width: 42%;
     padding: 0 5% 40px 5%;
-    margin: 82px 4% 60px 4%;
+    margin: 78px 4% 60px 4%;
     background-color: $bg-gray;
     border-bottom: none;
 
@@ -86,8 +86,13 @@
 }
 
 .catalog__addons {
-  margin-top: 28px;
+  min-width: $width-mobile;
+  margin-top: 42px;
   border-top: 3px solid $bg-green;
+
+  @media (min-width: $width-tablet) {
+    margin-top: 28px;
+  }
 
   @media (min-width: $width-desktop) {
     margin: 38px 0 85px 0;

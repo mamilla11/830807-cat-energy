@@ -24,6 +24,8 @@
 }
 
 .addon__info {
+  margin-bottom: 15px;
+
   @media (min-width: $width-tablet) {
     display: flex;
     justify-content: space-between;
@@ -44,7 +46,7 @@
   text-transform: uppercase;
   color: $text-gray;
   width: 100%;
-  margin-top: 13px;
+  margin-top: 12px;
   margin-bottom: 14px;
 
   @include text-style(16px, 16px);

@@ -1,15 +1,20 @@
 .input {
   display: flex;
   align-items: baseline;
-  margin-bottom: 15px;
-  text-transform: uppercase;
+  margin-top: 16px;
 
   @media (min-width: $width-tablet) {
-    margin-bottom: 22px;
+    margin-top: 19px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 570px;
   }
 }
 
 .input__label {
+  font-family: $font-oswald;
+  text-transform: uppercase;
   color: $text-darker;
   white-space: nowrap;
   padding: 13px 0 12px 0;
@@ -22,10 +27,30 @@
 }
 
 .input__field {
+  font-family: $font-oswald;
+  text-transform: uppercase;
   flex-grow: 1;
   color: $text-gray;
   margin-left: 12px;
-  padding: 13px;
+  padding: 12px 16px;
+  min-width: 172px;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: 0 0 0 1px $input-idle;
+  outline: none;
+
+  &:hover {
+    box-shadow: 0 0 0 1px $input-hover;
+  }
+
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 2px $input-active;
+  }
+
+  &--error {
+    box-shadow: 0 0 0 2px $input-error;
+  }
 
   @include text-style(16px, 18px);
 
@@ -38,7 +63,7 @@
 
   @media (min-width: $width-tablet) {
     margin-left: 18px;
-    padding: 12px 15px;
+    padding: 12px 18px;
 
     @include text-style(20px, 20px);
 
