@@ -24,7 +24,7 @@
 
   @media (min-width: $width-tablet) {
     margin-top: 30px;
-    padding: 0 40px 72px 40px;
+    padding: 0 40px 66px 40px;
     width: 322px;
 
     @include text-style(20px, 30px);
@@ -72,8 +72,8 @@
   border-bottom: 1px solid $border-gray-light;
 
   @media (min-width: $width-tablet) {
-    margin-bottom: 52px;
-    padding: 0 40px 0 40px;
+    margin-bottom: 72px;
+    padding: 0 35px 0 40px;
     border-bottom: none;
   }
 
@@ -91,8 +91,8 @@
 
   @media (min-width: $width-tablet) {
     border: 1px solid $border-gray-light;
-    padding: 16px 0 20px 0;
-    margin: 0 70px 98px 70px;
+    padding: 0 0 32px 0;
+    margin: 0 66px 98px 70px;
   }
 
   @media (min-width: $width-desktop) {
@@ -110,8 +110,8 @@
   margin: 25px 0 25px 0;
 
   @media (min-width: $width-tablet) {
-    margin: 72px 0 68px 0;
-    padding: 0 40px;
+    margin: 72px 0 86px 0;
+    padding: 0 35px 0 40px;
   }
 
   @media (min-width: $width-desktop) {
@@ -132,7 +132,7 @@
 
   @media (min-width: $width-tablet) {
     margin: 70px 0 82px 0;
-    padding: 0 40px;
+    padding: 0 36px 0 40px;
   }
 
   @media (min-width: $width-desktop) {
@@ -150,7 +150,7 @@
   padding: 0;
 
   @media (min-width: $width-tablet) {
-    margin: 45px 0 22px 0;
+    margin: 16px 0 65px 0;
     padding: 0 40px;
     display: flex;
     justify-content: space-between;
@@ -164,101 +164,12 @@
   }
 }
 
-.form__wrapper {
-  display: flex;
-  align-items: baseline;
-}
-
-.form__label {
-  color: $text-darker;
-  text-transform: uppercase;
-  white-space: nowrap;
-  padding: 13px 0 12px 0;
-
-  @include text-style(16px, 18px);
-
-  @media (min-width: $width-tablet) {
-    @include text-style(20px, 20px);
-  }
-}
-
-.form__label--radio {
-  position: relative;
-  padding-left: 45px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 9px;
-    transform: translateY(-50%);
-    width: 12px;
-    height: 12px;
-    background-color: $bg-green;
-    cursor: pointer;
-    border-radius: 50%;
-    box-shadow: 0 0 0 8px white,
-      0 0 0 9px $border-radio;
-  }
-
-  @media (min-width: $width-tablet) {
-    padding: 16px 0 16px 60px;
-
-    &::before {
-      width: 18px;
-      height: 18px;
-      box-shadow: 0 0 0 10px white,
-        0 0 0 11px $border-radio;
-    }
-  }
-}
-
-.form__label--checkbox {
-  position: relative;
-  padding-left: 45px;
-
-  &::before {
-    content: "";
-    position: absolute;
-    top: 50%;
-    left: 9px;
-    transform: translateY(-50%);
-    width: 12px;
-    height: 12px;
-    cursor: pointer;
-    box-shadow: 0 0 0 8px white,
-      0 0 0 9px $border-radio;
-  }
-
-  @media (min-width: $width-tablet) {
-    padding-left: 65px;
-    margin-bottom: 30px;
-    width: 283px;
-    box-sizing: border-box;
-
-    &::before {
-      width: 21px;
-      height: 21px;
-      box-shadow: 0 0 0 8px white,
-        0 0 0 9px $border-radio;
-    }
-  }
-
-  @media (min-width: $width-desktop) {
-    width: 245px;
-  }
-}
-
 .form__text-field {
-  box-sizing: border-box;
-  min-width: 100px;
-  display: inline-block;
-  vertical-align: middle;
   flex-grow: 1;
-  padding: 12px 13px 13px 17px;
+  padding: 13px 13px 13px 17px;
   color: $text-gray;
   text-transform: uppercase;
-  margin: 0 0 15px 12px;
+  margin: 0 0 0 12px;
 
   @include text-style(16px, 18px);
 
@@ -269,27 +180,13 @@
   }
 
   @media (min-width: $width-tablet) {
-    margin: 0 0 20px 18px;
-    padding: 11px 15px 11px 16px;
+    margin: 0 0 0 18px;
+    padding: 12px 15px 11px 16px;
 
     @include text-style(20px, 20px);
 
     &::placeholder {
       @include text-style(20px, 20px);
-    }
-  }
-
-  @media (min-width: $width-desktop) {
-    &--last {
-      margin-bottom: 0;
-    }
-
-    &--email {
-      width: 485px;
-    }
-
-    &--phone {
-      width: 485px;
     }
   }
 }
@@ -299,10 +196,10 @@
   height: 150px;
   margin: 0;
   padding: 10px 12px;
+  box-sizing: border-box;
 
   @media (min-width: $width-tablet) {
-    height: 178px;
-    margin-left: 0;
+    height: 174px;
   }
 
   @media (min-width: $width-desktop) {

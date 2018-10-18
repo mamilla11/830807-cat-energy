@@ -1,0 +1,69 @@
+.input {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 15px;
+    text-transform: uppercase;
+  
+    @media (min-width: $width-tablet) {
+      margin-bottom: 22px;
+    }
+}
+
+.input__label {
+    color: $text-darker;
+    white-space: nowrap;
+    padding: 13px 0 12px 0;
+  
+    @include text-style(16px, 18px);
+  
+    @media (min-width: $width-tablet) {
+      @include text-style(20px, 20px);
+    }
+}
+
+.input__field {
+    flex-grow: 1;
+    color: $text-gray;
+    margin-left: 12px;
+    padding: 13px;
+  
+    @include text-style(16px, 18px);
+  
+    &::placeholder {
+        text-transform: uppercase;
+        font-family: $font-oswald;
+  
+        @include text-style(16px, 18px);
+    }
+  
+    @media (min-width: $width-tablet) {
+        margin-left: 18px;
+        padding: 12px 15px;
+  
+        @include text-style(20px, 20px);
+  
+        &::placeholder {
+            @include text-style(20px, 20px);
+        }
+    }
+    
+    @media (min-width: $width-tablet) {
+        &--email {
+            margin-left: 20px;
+            padding: 11px 40px 11px 18px;
+        }
+
+        &--phone {
+            margin-left: 14px;
+            padding: 11px 40px 11px 18px;
+        }
+    }
+
+    @media (min-width: $width-desktop) {
+      &--email,
+      &--phone {
+        width: 485px;
+      }
+    }
+  }
+  

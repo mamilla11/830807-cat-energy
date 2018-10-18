@@ -55,19 +55,19 @@
             <section class="form__about">
               <div class="page__container">
                 <h2 class="visually-hidden">Персональные данные</h2>
-                <div class="form__wrapper">
-                  <label class="form__label" for="name">Имя:*</label>
-                  <input class="form__text-field" type="text" name="name" id="name"
+                <div class="input">
+                  <label class="input__label" for="name">Имя:*</label>
+                  <input class="input__field" type="text" name="name" id="name"
                           placeholder="Барсик" required>
                 </div>
-                <div class="form__wrapper">
-                  <label class="form__label" for="weight">Вес (кг):*</label>
-                  <input class="form__text-field" type="text" name="weight" id="weight"
+                <div class="input">
+                  <label class="input__label" for="weight">Вес (кг):*</label>
+                  <input class="input__field" type="text" name="weight" id="weight"
                         placeholder="7" required>
                 </div>
-                <div class="form__wrapper">
-                  <label class="form__label" for="age">Возраст (лет):</label>
-                  <input class="form__text-field form__text-field--last" type="text" name="age" id="age"
+                <div class="input">
+                  <label class="input__label" for="age">Возраст (лет):</label>
+                  <input class="input__field" type="text" name="age" id="age"
                           placeholder="7">
                 </div>
               </div>
@@ -75,26 +75,26 @@
             <section class="form__goal">
               <div class="page__container">
                 <h2 class="visually-hidden">Ваша цель</h2>
-                <div class="form__wrapper">
-                  <label class="form__label form__label--radio" for="radio-slim">
+                <div class="radio">
+                  <input class="radio__button radio__button--slim visually-hidden" type="radio"
+                    id="radio-slim" name="goal-radio" checked>
+                  <label class="radio__label" for="radio-slim">
                     Похудение
                   </label>
-                  <input class="form__radio form__radio--slim visually-hidden" type="radio"
-                        id="radio-slim" name="goal-radio" checked>
                 </div>
-                <div class="form__wrapper">
-                  <label class="form__label form__label--radio" for="radio-mass">
+                <div class="radio">
+                  <input class="radio__button radio__button--mass visually-hidden" type="radio"
+                    id="radio-mass" name="goal-radio">
+                  <label class="radio__label" for="radio-mass">
                     Набор массы
                   </label>
-                  <input class="form__radio form__radio--mass visually-hidden" type="radio"
-                        id="radio-mass" name="goal-radio">
                 </div>
-                <div class="form__wrapper">
-                  <label class="form__label form__label--radio" for="radio-none">
+                <div class="radio">
+                  <input class="radio__button radio__button--none visually-hidden" type="radio"
+                    id="radio-none" name="goal-radio">
+                  <label class="radio__label" for="radio-none">
                     Не знаю (нужен ваш совет)
                   </label>
-                  <input class="form__radio form__radio--none visually-hidden" type="radio"
-                        id="radio-none" name="goal-radio">
                 </div>
               </div>
             </section>
@@ -103,14 +103,14 @@
             <div class="page__container">
               <h2 class="heading heading--subtitle form__subtitle">Контактные данные (владельца кота)</h2>
               <div class="form__contacts-wrapper">
-                <div class="form__wrapper">
-                  <label class="form__label" for="email">E-mail:*</label>
-                  <input class="form__text-field form__text-field--email" type="email"
+                <div class="input">
+                  <label class="input__label" for="email">E-mail:*</label>
+                  <input class="input__field input__field--email" type="email"
                         name="email" id="email" placeholder="kuklachev@gmail.com" required>
                 </div>
-                <div class="form__wrapper">
-                  <label class="form__label" for="phone">Телефон:*</label>
-                  <input class="form__text-field form__text-field--phone" type="phone"
+                <div class="input">
+                  <label class="input__label" for="phone">Телефон:*</label>
+                  <input class="input__field input__field--phone" type="phone"
                           name="phone" id="phone" placeholder="8 (960) 900-60-90" required>
                 </div>
               </div>
@@ -129,33 +129,33 @@
             <div class="page__container">
               <h2 class="heading heading--subtitle form__subtitle">Дополнительно</h2>
               <div class="form__extra-wrapper">
-                <div class="form__wrapper">
-                  <label class="form__label form__label--checkbox" for="extra-sweetener">
+                <div class="checkbox">
+                  <input class="checkbox__field visually-hidden" type="checkbox"
+                    id="extra-sweetener" name="extra-sweetener" checked>
+                  <label class="checkbox__label" for="extra-sweetener">
                     Сахарозаменитель
                   </label>
-                  <input class="form__checkbox visually-hidden" type="checkbox"
-                        id="extra-sweetener" name="extra-sweetener" checked>
                 </div>
-                <div class="form__wrapper">
-                  <label class="form__label form__label--checkbox" for="extra-water">
+                <div class="checkbox">
+                  <input class="checkbox__field visually-hidden" type="checkbox"
+                    id="extra-water" name="extra-water">
+                  <label class="checkbox__label" for="extra-water">
                     Питьевая вода
                   </label>
-                  <input class="form__checkbox visually-hidden" type="checkbox"
-                          id="extra-water" name="extra-water">
                 </div>
-                <div class="form__wrapper">
-                  <label class="form__label form__label--checkbox" for="extra-milk">
+                <div class="checkbox">
+                  <input class="checkbox__field visually-hidden" type="checkbox"
+                    id="extra-milk" name="extra-milk">
+                  <label class="checkbox__label" for="extra-milk">
                     Молоко
                   </label>
-                  <input class="form__checkbox visually-hidden" type="checkbox"
-                          id="extra-milk" name="extra-milk">
                 </div>
-                <div class="form__wrapper">
-                  <label class="form__label form__label--checkbox" for="extra-vitamins">
+                <div class="checkbox">
+                  <input class="checkbox__field visually-hidden" type="checkbox"
+                    id="extra-vitamins" name="extra-vitamins">
+                  <label class="checkbox__label" for="extra-vitamins">
                     Витамины
                   </label>
-                  <input class="form__checkbox visually-hidden" type="checkbox"
-                          id="extra-vitamins" name="extra-vitamins">
                 </div>
               </div>
             </div>
