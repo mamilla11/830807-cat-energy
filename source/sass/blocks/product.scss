@@ -54,7 +54,7 @@
   @media (min-width: $width-tablet) {
     width: 132px;
     text-align: center;
-    margin-top: 0px;
+    margin-top: 0;
     margin-bottom: 10px;
 
     @include text-style(20px, 20px);
