@@ -1,0 +1,263 @@
+.form {
+  font-family: $font-oswald;
+}
+
+.form__title {
+  padding: 15px 0 24px 0;
+
+  @media (min-width: $width-tablet) {
+    padding: 32px 0 26px 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 62px 0 26px 0;
+  }
+}
+
+.form__description {
+  color: $text-dark;
+  text-transform: uppercase;
+  margin: 0;
+  padding: 0 0 24px 0;
+
+  @include text-style(14px, 18px);
+
+  @media (min-width: $width-tablet) {
+    margin-top: 30px;
+    padding: 0 40px 44px 40px;
+    width: 322px;
+
+    @include text-style(20px, 30px);
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 0 0 42px 0;
+  }
+}
+
+.form__subtitle {
+  display: inline-block;
+  vertical-align: middle;
+  max-width: 182px;
+  margin: -18px 0 8px -20px;
+  background-color: $bg-white;
+  padding: 0 20px;
+
+  @media (min-width: $width-tablet) {
+    max-width: 520px;
+    padding: 0 40px;
+    margin: -34px 0 0 0;
+  }
+
+  @media (min-width: $width-desktop) {
+    max-width: 520px;
+    padding: 0 40px 0 40px;
+    margin: -34px 0 0 -40px;
+  }
+}
+
+.form__general {
+  @media (min-width: $width-desktop) {
+    width: $width-desktop;
+    margin: 0 auto;
+    display: flex;
+    align-items: stretch;
+    margin-bottom: 90px;
+  }
+}
+
+.form__about {
+  margin-bottom: 7px;
+  padding-bottom: 24px;
+  border-bottom: 1px solid $border-gray-light;
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 72px;
+    padding: 0 35px 0 40px;
+    border-bottom: none;
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 0;
+    margin: 0;
+    width: 650px;
+  }
+}
+
+.form__goal {
+  margin-bottom: 44px;
+  padding: 0 0 25px 0;
+  border-bottom: 1px solid $border-gray-light;
+
+  @media (min-width: $width-tablet) {
+    border: 1px solid $border-gray-light;
+    padding: 0 0 32px 0;
+    margin: 0 66px 98px 70px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 570px;
+    margin: 22px 0 0 40px;
+    box-sizing: border-box;
+  }
+}
+
+.form__contacts {
+  border-top: 3px solid $bg-green;
+}
+
+.form__contacts-wrapper {
+  margin: 26px 0 43px 0;
+
+  @media (min-width: $width-tablet) {
+    margin: 68px 0 90px 0;
+    padding: 0 35px 0 40px;
+  }
+
+  @media (min-width: $width-desktop) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0;
+    margin: 50px 0 89px 0;
+  }
+}
+
+.form__comment {
+  border-top: 3px solid $bg-green;
+}
+
+.form__comment-wrapper {
+  margin: 26px 0 42px 0;
+  padding: 0;
+
+  @media (min-width: $width-tablet) {
+    margin: 70px 0 84px 0;
+    padding: 0 36px 0 40px;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 70px 0 86px 0;
+    padding: 0;
+  }
+}
+
+.form__extra {
+  border-top: 3px solid $bg-green;
+}
+
+.form__extra-wrapper {
+  margin: 24px 0 36px 0;
+  padding: 0;
+
+  @media (min-width: $width-tablet) {
+    margin: 12px 0 52px 0;
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    align-items: center;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 14px 0 62px 0;
+    padding: 0;
+  }
+}
+
+.form__textarea {
+  color: $text-gray;
+  font-family: $font-oswald;
+  text-transform: uppercase;
+  width: 100%;
+  height: 148px;
+  margin: 0;
+  padding: 11px 15px;
+  box-sizing: border-box;
+  border: none;
+  box-shadow: 0 0 0 1px $input-idle;
+  outline: none;
+
+  &:hover {
+    box-shadow: 0 0 0 1px $input-hover;
+  }
+
+  &:active,
+  &:focus {
+    box-shadow: 0 0 0 2px $input-active;
+  }
+
+  @include text-style(16px, 18px);
+
+  &::placeholder {
+    font-family: $font-oswald;
+
+    @include text-style(16px, 18px);
+  }
+
+  @media (min-width: $width-tablet) {
+    padding: 13px 15px 11px 18px;
+    height: 172px;
+
+    @include text-style(20px, 20px);
+
+    &::placeholder {
+      @include text-style(20px, 20px);
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 16px 18px;
+    height: 172px;
+  }
+}
+
+.form__submit {
+  @media (min-width: $width-tablet) {
+    padding: 0 40px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 630px;
+    margin-bottom: 74px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 1220px;
+    padding: 0;
+    margin-bottom: 82px;
+  }
+}
+
+.form__button {
+  width: 100%;
+
+  @media (min-width: $width-tablet) {
+    width: 282px;
+    padding: 16px;
+
+    @include text-style(20px, 20px);
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 570px;
+  }
+}
+
+.form__tip {
+  font-family: $font-arial;
+  text-align: center;
+  margin: 22px 0 30px 0;
+
+  @include text-style(14px, 16px);
+
+  @media (min-width: $width-tablet) {
+    margin: 0 0 6px 0;
+    width: 283px;
+    text-align: left;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 570px;
+  }
+}

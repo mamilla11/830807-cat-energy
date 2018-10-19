@@ -1,0 +1,130 @@
+.page-header {
+  min-width: $width-mobile;
+
+  @media (min-width: $width-desktop) {
+    padding-top: 42px;
+    padding-bottom: 0;
+
+    &--main {
+      position: relative;
+      min-height: 696px;
+    }
+
+    &--main::after {
+      position: absolute;
+      content: "";
+      width: 50%;
+      height: 696px;
+      top: 0;
+      right: 0;
+      background: $bg-green url("../img/index-background-desktop@1x.jpg") no-repeat center;
+      background-size: cover;
+      z-index: 0;
+    }
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      &--main::after {
+        background-image: url("../img/index-background-desktop@2x.jpg");
+      }
+    }
+  }
+}
+
+.page-header__wrapper {
+  position: relative;
+  z-index: 1;
+  padding: 0 20px;
+  border-bottom: 1px solid $line-gray-lightest;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 12px 30px;
+    border-bottom: none;
+  }
+
+  @media (min-width: $width-desktop) {
+    max-width: $width-desktop;
+    margin: 0 auto;
+    padding: 0 40px;
+    box-sizing: border-box;
+  }
+}
+
+.page-header__link {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 11px 0;
+  cursor: pointer;
+
+  &:hover {
+    opacity: 0.8;
+  }
+
+  &:active {
+    opacity: 0.6;
+  }
+
+  &--current {
+    cursor: default;
+  }
+
+  &--current:hover,
+  &--current:active {
+    opacity: 1;
+  }
+
+  @media (min-width: $width-tablet) {
+    flex-shrink: 0;
+  }
+}
+
+.page-header__logo {
+  width: 190px;
+  height: 39px;
+
+  @media (min-width: $width-tablet) {
+    width: 173px;
+    height: 58px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 202px;
+    height: 59px;
+  }
+}
+
+.page-header__menu-toggle {
+  position: absolute;
+  top: 22px;
+  right: 20px;
+  padding: 0;
+  width: 24px;
+  height: 18px;
+  cursor: pointer;
+
+  @include text-style(0,0);
+
+  &--close {
+    background: transparent url("../img/icon-close.svg") no-repeat center;
+  }
+
+  &--open {
+    background: transparent url("../img/icon-mobile-menu.svg") no-repeat center;
+  }
+
+  @media (min-width: $width-tablet) {
+    display: none;
+  }
+}
+
+.page-header__navigation {
+  @media (min-width: $width-tablet) {
+    max-width: 67%;
+  }
+
+  @media (min-width: $width-desktop) {
+    max-width: 47%;
+  }
+}

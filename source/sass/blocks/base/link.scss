@@ -13,28 +13,44 @@
 .link--arrow {
   position: relative;
   color: $text-dark;
+  max-width: 75%;
+  text-align: left;
 
   @include text-style(16px, 16px);
-
-  &:active {
-    color: rgba($text-dark, 0.3%);
-  }
 
   &::after {
     position: absolute;
     top: 50%;
-    right: -48px;
+    left: 100%;
+    margin-left: 14%;
     content: "";
     width: 24px;
     height: 11px;
-    background-image: url("http://placehold.it/24x11");
+    background: url("../img/icon-right-arrow-long.svg") no-repeat center;
     transform: translateY(-50%);
+  }
+
+  &:hover {
+    &::after {
+      width: 32px;
+      background: url("../img/icon-right-arrow-verylong.svg") no-repeat center;
+    }
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
+  @media (min-width: $width-tablet) {
+    &::after {
+      margin-left: 22%;
+    }
   }
 }
 
 .link--underline {
   color: $text-dark;
-  padding: 5px 0;
+  padding: 0;
   border-bottom: 1px dotted $border-gray-darker;
 
   @include text-style(16px, 20px);

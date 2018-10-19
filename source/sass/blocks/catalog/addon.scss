@@ -1,0 +1,90 @@
+.addon {
+  padding-bottom: 18px;
+  border-bottom: 1px solid $border-gray-light;
+
+  @media (min-width: $width-tablet) {
+    padding: 15px 36px 27px 38px;
+    border: 1px solid $border;
+    border-bottom: none;
+
+    &:last-child {
+      border-bottom: 1px solid $border;
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px 0;
+    border-left: none;
+    border-right: none;
+    width: 895px;
+  }
+}
+
+.addon__info {
+  margin-bottom: 15px;
+
+  @media (min-width: $width-tablet) {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 610px;
+    margin-bottom: 0;
+    display: flex;
+    justify-content: space-between;
+  }
+}
+
+.addon__name {
+  font-family: $font-oswald;
+  text-transform: uppercase;
+  color: $text-gray;
+  width: 100%;
+  margin-top: 12px;
+  margin-bottom: 14px;
+
+  @include text-style(16px, 16px);
+
+  @media (min-width: $width-tablet) {
+    width: 166px;
+    text-align: left;
+    margin-top: 10px;
+    margin-bottom: 12px;
+
+    @include text-style(20px, 20px);
+  }
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 11px;
+  }
+}
+
+.addon__description {
+  margin-bottom: 14px;
+
+  @include text-style(14px, 14px);
+
+  @media (min-width: $width-tablet) {
+    margin-bottom: 0;
+
+    @include text-style(16px, 20px);
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 285px;
+  }
+}
+
+.addon__button {
+  width: 100%;
+
+  @media (min-width: $width-desktop) {
+    width: 245px;
+  }
+}

@@ -4,21 +4,31 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
+
+  @media (min-width: $width-tablet) {
+    width: 366px;
+  }
 }
 
 .statistic__item {
   display: inline-block;
   position: relative;
-  width: 120px;
+  width: 122px;
   padding-top: 12px;
   padding-bottom: 14px;
   border: 1px solid $border-gray-lighter;
   border-radius: 5px;
+
+  @media (min-width: $width-tablet) {
+    width: 162px;
+    padding-top: 14px;
+    padding-bottom: 20px;
+  }
 }
 
 .statistic__param {
   position: absolute;
-  bottom: -15px;
+  bottom: -17px;
   left: 50%;
   transform: translateX(-50%);
   text-transform: lowercase;
@@ -26,28 +36,8 @@
   padding: 0 15px;
 
   @include text-style(12px, 12px);
-}
 
-.statistic__value {
-  font-family: $font-oswald;
-  text-transform: uppercase;
-  color: $text-dark;
-
-  @include text-style(24px, 24px);
-}
-
-@media (min-width: $width-tablet) {
-  .statistic {
-    width: 366px;
-  }
-
-  .statistic__item {
-    width: 162px;
-    padding-top: 14px;
-    padding-bottom: 20px;
-  }
-
-  .statistic__param {
+  @media (min-width: $width-tablet) {
     padding: 0 5px;
     bottom: -5px;
     white-space: nowrap;
@@ -56,13 +46,19 @@
     @include text-style(14px, 14px);
   }
 
-  .statistic__value {
-    @include text-style(30px, 37px);
+  @media (min-width: $width-desktop) {
+    background-color: $bg-gray;
   }
 }
 
-@media (min-width: $width-desktop) {
-  .statistic__param {
-    background-color: $bg-gray;
+.statistic__value {
+  font-family: $font-oswald;
+  text-transform: uppercase;
+  color: $text-dark;
+
+  @include text-style(24px, 24px);
+
+  @media (min-width: $width-tablet) {
+    @include text-style(30px, 37px);
   }
 }
