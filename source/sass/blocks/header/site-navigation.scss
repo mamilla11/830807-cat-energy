@@ -1,11 +1,5 @@
 .site-navigation__list {
-  display: none;
-
   @include list-reset();
-
-  &--open {
-    display: block;
-  }
 
   @media (min-width: $width-tablet) {
     display: flex;

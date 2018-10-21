@@ -49,6 +49,10 @@
     box-shadow: 0 0 0 1px $input-hover;
   }
 
+  &:hover + .input__icon {
+    fill: $input-icon-fill-idle;
+  }
+
   &:active,
   &:focus {
     box-shadow: 0 0 0 2px $input-active;
@@ -59,10 +63,12 @@
     fill: $input-icon-fill-active;
   }
 
+  &:invalid,
   &--error {
     box-shadow: 0 0 0 2px $input-error;
   }
 
+  &:invalid + .input__icon,
   &--error + .input__icon {
     fill: $input-icon-fill-error;
   }

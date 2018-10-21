@@ -103,15 +103,16 @@
   width: 24px;
   height: 18px;
   cursor: pointer;
+  background: transparent url("../img/vector/icon-mobile-menu.svg") no-repeat center;
 
   @include text-style(0,0);
 
-  &--close {
-    background: transparent url("../img/vector/icon-close.svg") no-repeat center;
+  &--no-js {
+    display: none;
   }
 
-  &--open {
-    background: transparent url("../img/vector/icon-mobile-menu.svg") no-repeat center;
+  &--close {
+    background: transparent url("../img/vector/icon-close.svg") no-repeat center;
   }
 
   @media (min-width: $width-tablet) {
@@ -120,6 +121,12 @@
 }
 
 .page-header__navigation {
+  display: none;
+
+  &--open {
+    display: block;
+  }
+
   @media (min-width: $width-tablet) {
     max-width: 67%;
   }
