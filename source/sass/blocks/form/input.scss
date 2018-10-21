@@ -45,6 +45,16 @@
     padding-right: 45px;
   }
 
+  &:invalid,
+  &--error {
+    box-shadow: 0 0 0 2px $input-error;
+  }
+
+  &:invalid + .input__icon,
+  &--error + .input__icon {
+    fill: $input-icon-fill-error;
+  }
+
   &:hover {
     box-shadow: 0 0 0 1px $input-hover;
   }
@@ -61,16 +71,6 @@
   &:active + .input__icon,
   &:focus + .input__icon {
     fill: $input-icon-fill-active;
-  }
-
-  &:invalid,
-  &--error {
-    box-shadow: 0 0 0 2px $input-error;
-  }
-
-  &:invalid + .input__icon,
-  &--error + .input__icon {
-    fill: $input-icon-fill-error;
   }
 
   @include text-style(16px, 18px);

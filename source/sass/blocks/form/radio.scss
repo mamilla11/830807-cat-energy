@@ -72,5 +72,15 @@
 }
 
 .radio__button:focus + .radio__label {
-  outline: 1px dotted $radio-border-hover;
+  outline: none;
+}
+
+.radio__button:focus + .radio__label::before {
+  box-shadow: 0 0 0 8px white,
+    0 0 0 9px $input-active;
+
+  @media (min-width: $width-tablet)  {
+    box-shadow: 0 0 0 10px white,
+      0 0 0 11px $input-active;
+  }
 }

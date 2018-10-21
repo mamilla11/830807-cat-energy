@@ -65,5 +65,9 @@
 }
 
 .checkbox__field:focus + .checkbox__label {
-  outline: 1px dotted $checkbox-border-hover;
+  outline: none;
+}
+
+.checkbox__field:focus + .checkbox__label::before {
+  border: 2px solid $input-active;
 }
