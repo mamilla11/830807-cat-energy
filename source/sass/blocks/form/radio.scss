@@ -79,7 +79,7 @@
   box-shadow: 0 0 0 8px white,
     0 0 0 9px $input-active;
 
-  @media (min-width: $width-tablet)  {
+  @media (min-width: $width-tablet) {
     box-shadow: 0 0 0 10px white,
       0 0 0 11px $input-active;
   }

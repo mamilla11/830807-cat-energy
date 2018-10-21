@@ -14,7 +14,7 @@ function init () {
     }, {
       searchControlProvider: 'yandex#search'
     });
-  
+
   update();
 }
 
@@ -65,5 +65,3 @@ function update() {
   myMap.geoObjects.removeAll();
   myMap.geoObjects.add(myPlacemark);
 }
-
-
