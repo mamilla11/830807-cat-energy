@@ -15,7 +15,7 @@
   background-position: top;
   background-image:
     linear-gradient(to top, #ffffff 97px, transparent 97px),
-    url("../img/index-background-mobile@1x.jpg"),
+    url("../img/raster/index-background-mobile@1x.jpg"),
     linear-gradient(to top, #ffffff 177px, transparent 177px);
   background-color: $bg-green;
   background-size: 100%;
@@ -23,7 +23,7 @@
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image:
       linear-gradient(to top, #ffffff 97px, transparent 97px),
-      url("../img/index-background-mobile@2x.jpg"),
+      url("../img/raster/index-background-mobile@2x.jpg"),
       linear-gradient(to top, #ffffff 177px, transparent 177px);
   }
 

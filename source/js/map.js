@@ -34,7 +34,7 @@ function init () {
     hintContent: "ул. Большая Конюшенная 19/8, Санкт-Петербург",
     }, {
     iconLayout: "default#image",
-    iconImageHref: "img/map-pin.png",
+    iconImageHref: "img/raster/map-pin.png",
     iconImageSize: [62, 53],
     iconImageOffset: [-31, -25]
   });

@@ -1,23 +1,34 @@
-.developer {
+.developer__link {
+  width: 100%;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  align-content: center;
-}
 
-.developer__name {
   text-decoration: none;
   color: inherit;
 
   @include text-style(16px, 16px);
 
+  &:hover .developer__logo {
+    fill: $social-icon-fill-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+
   @media (min-width: $width-tablet) {
-    margin-right: 20px;
+    justify-content: flex-end;
   }
 }
 
 .developer__logo {
   width: 27px;
   height: 34px;
+  margin-left: auto;
+  fill: $social-icon-fill-idle;
+
+  @media (min-width: $width-tablet) {
+    margin-left: 20px;
+  }
 }
