@@ -1,7 +1,7 @@
 var myMap;
 
-const tablet_viewport = 748;
-const desktop_viewport = 1280;
+const tablet_viewport = 768;
+const desktop_viewport = 1300;
 const placemarkImage = "img/raster/map-pin.png";
 
 window.addEventListener("resize", update);
@@ -25,8 +25,7 @@ function update() {
   var placemarkOfst;
   var mapZoom;
 
-  const viewport = document.documentElement.clientWidth || window.innerWidth;
-  console.log(viewport);
+  const viewport = window.innerWidth;
 
   if (viewport < tablet_viewport) {
     placemarkSize = [62, 53];
