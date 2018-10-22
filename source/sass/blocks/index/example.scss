@@ -4,15 +4,14 @@
   min-width: $width-mobile;
 
   @media (min-width: $width-tablet) {
-    padding-top: 5px;
-    padding-bottom: 58px;
+    padding: 5px 30px 58px 30px;
     background-color: $bg-white;
-    background-image: linear-gradient(to bottom, #ffffff 56%, $bg-gray 56%);
+    background-image: linear-gradient(to bottom, $bg-white 55.5%, $bg-gray 55.5%);
   }
 
   @media (min-width: $width-desktop) {
     padding-bottom: 0;
-    background-image: linear-gradient(to bottom, #ffffff 23%, $bg-gray 23%);
+    background-image: linear-gradient(to bottom, $bg-white 23%, $bg-gray 23%);
   }
 }
 
@@ -25,6 +24,7 @@
   @include text-style(36px, 60px);
 
   @media (min-width: $width-tablet) {
+    padding: 0;
     margin: 0 0 65px 0;
 
     @include text-style(60px, 60px);
@@ -40,7 +40,7 @@
   margin: 20px 0;
 
   @media (min-width: $width-tablet) {
-    padding-right: 20px;
+    padding: 0 20px 0 0;
     margin-bottom: 49px;
 
     @include text-style(16px, 24px);
@@ -56,10 +56,11 @@
   padding: 0 20px;
 
   @media (min-width: $width-tablet) {
+    padding: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-bottom: 84px;
+    margin-bottom: 78px;
   }
 
   @media (min-width: $width-desktop) {
@@ -112,79 +113,5 @@
   @media (min-width: $width-desktop) {
     display: inline;
     margin-right: 60px;
-  }
-}
-
-.example__image {
-  display: block;
-  margin: 0 auto;
-  width: 320px;
-  height: 240px;
-
-  @media (min-width: $width-tablet) {
-    width: 677px;
-    height: 502px;
-  }
-
-  @media (min-width: $width-desktop) {
-    margin: -42px 0 42px -40px;
-  }
-}
-
-.example__result {
-  margin: 30px auto 15px auto;
-  display: flex;
-  justify-content: space-between;
-  width: 200px;
-
-  @media (min-width: $width-tablet) {
-    width: 570px;
-  }
-
-  @media (min-width: $width-desktop) {
-    margin: 0 0 8px auto;
-    text-align: right;
-  }
-}
-
-.example__indicator {
-  margin-top: 4px;
-  margin-left: 5px;
-  width: 84px;
-  height: 14px;
-  background-color: $bg-white;
-  border: 1px solid $line-gray-3;
-  border-radius: 15px;
-  box-sizing: border-box;
-
-  @media (min-width: $width-tablet) {
-    margin-top: 7px;
-    margin-left: 0;
-    background-color: $line;
-    width: 428px;
-    height: 6px;
-    border: none;
-  }
-}
-
-.example__button {
-  &--before {
-    padding-left: 3px;
-  }
-
-  @media (min-width: $width-tablet) {
-    @include text-style(20px, 20px);
-  }
-}
-
-.example__columns {
-  @media (min-width: $width-desktop) {
-    display: flex;
-  }
-}
-
-.example__column {
-  @media (min-width: $width-desktop) {
-    width: 50%;
   }
 }

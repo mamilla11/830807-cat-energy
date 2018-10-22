@@ -62,4 +62,8 @@
   &:active {
     border: none;
   }
+
+  @media (min-width: $width-tablet) {
+    @include text-style(20px, 20px);
+  }
 }
