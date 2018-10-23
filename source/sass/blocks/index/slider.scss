@@ -10,9 +10,13 @@ $image-tablet-height: 517px;
 
   @media (min-width: $width-tablet) {
     width: 100%;
-    background-image: 
-      linear-gradient(to bottom, $bg-white 30%, transparent 30%),
-      linear-gradient(to right, $bg-gray 23%, $bg-darkgray 23%);
+    padding-bottom: 58px;
+    background-image: linear-gradient(to bottom, $bg-white 26.6%, $bg-darkgray 26.6%);
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: -54px 0 0 90px;
+    background-image: linear-gradient(to bottom, $bg-white 28.9%, $bg-darkgray 28.9%);
   }
 }
 
@@ -39,9 +43,14 @@ $image-tablet-height: 517px;
 
   @media (min-width: $width-tablet) {
     width: 50%;
-    height: 577px;
+    height: 650px;
     background-color: $bg-white;
-    background-image: linear-gradient(to bottom, $bg-white 30%, $bg-gray 30%);
+    background-image: linear-gradient(to bottom, $bg-white 26%, $bg-gray 26%);
+  }
+
+  @media (min-width: $width-desktop) {
+    width: 53%;
+    background-image: linear-gradient(to bottom, $bg-white 28.9%, $bg-gray 28.9%);
   }
 }
 
@@ -63,9 +72,14 @@ $image-tablet-height: 517px;
 
   @media (min-width: $width-tablet) {
     margin-top: 22px;
-    margin-left: 10px;
+    margin-left: 0;
     position: relative;
     z-index: 2;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin-top: 40px;
+    margin-left: 40px;
   }
 }
 
@@ -73,16 +87,12 @@ $image-tablet-height: 517px;
   margin-right: 20px;
 
   @media (min-width: $width-tablet) {
-    margin-right: 28px;
+    margin-right: 16px;
   }
 }
 
 .slider__button--after {
   margin-left: 16px;
-
-  @media (min-width: $width-tablet) {
-    margin-right: 10px;
-  }
 }
 
 .slider__range {
@@ -124,7 +134,7 @@ $image-tablet-height: 517px;
   }
 
   @media (min-width: $width-tablet) {
-    width: 428px;
+    width: 440px;
     height: 6px;
     border: none;
     background-color: $line;

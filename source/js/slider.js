@@ -2,6 +2,7 @@
 *** VARIABLES ******************************************************
 ********************************************************************/
 const tabletWidth = 768;
+const desktopWidth = 1300;
 var range = document.querySelector(".slider__range");
 var toggler = document.querySelector(".slider__toggler");
 var beforeImage = document.querySelector(".slider__resizable");
@@ -30,12 +31,23 @@ function resize() {
   if (viewport < tabletWidth) {
     beforeImage.style.width = "100%";
     range.classList.add("slider__range--before");
-  }
-  else {
-    beforeImage.style.width = "50%";
-    range.classList.remove("slider__range--before");
     range.classList.remove("slider__range--after");
   }
+  else {
+    range.classList.remove("slider__range--before");
+    range.classList.remove("slider__range--after");
+    toFiftyFiftyState();
+  } 
+}
+
+function toFiftyFiftyState() {
+  if (viewport < desktopWidth) {
+    beforeImage.style.width = "50%";
+  }
+  else {
+    beforeImage.style.width = "53%";
+  }
+  toggler.style.left = center + "px";
 }
 
 function getElemWidth(elem) {
@@ -83,6 +95,7 @@ function togglerDownHandler(evt) {
 ********************************************************************/
 window.addEventListener("load", init);
 window.addEventListener("resize", resize);
+toggler.addEventListener("dblclick", toFiftyFiftyState);
 
 buttonBefore.addEventListener("click", function(evt) {
   evt.preventDefault();
@@ -108,9 +121,4 @@ buttonAfter.addEventListener("click", function (evt) {
   else {
     toggler.style.left = rightLimit + "px";
   }
-});
-
-toggler.addEventListener("dblclick", function () {
-  beforeImage.style.width = "50%";
-  toggler.style.left = center + "px";
 });
