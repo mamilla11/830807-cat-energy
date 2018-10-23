@@ -137,7 +137,7 @@ $image-tablet-height: 517px;
     width: 440px;
     height: 6px;
     border: none;
-    background-color: $line;
+    background-color: $line-gray-5;
   }
 }
 
@@ -155,7 +155,7 @@ $image-tablet-height: 517px;
     width: 34px;
     height: 34px;
     background-image: radial-gradient($bg-green 0, $bg-green 4px, #ffffff 5px, #ffffff 100%);
-    border: 1px solid gray;
+    border: 1px solid $toggler-border-idle;
     border-radius: 50%;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
     box-sizing: border-box;
@@ -165,7 +165,7 @@ $image-tablet-height: 517px;
     }
 
     &:active {
-      border: 2px solid $bg-green;
+      border: 2px solid $toggler-border-active;
       box-shadow: 0 4px 5px rgba(0, 0, 0, 0.3);
     }
   }

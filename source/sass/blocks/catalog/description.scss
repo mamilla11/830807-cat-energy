@@ -19,7 +19,7 @@
 
 .description__item {
   @media (min-width: $width-tablet) {
-    border-bottom: 1px solid $border-gray-lighter;
+    border-bottom: 1px solid $line-gray-3;
 
     &--oneline {
       display: block;

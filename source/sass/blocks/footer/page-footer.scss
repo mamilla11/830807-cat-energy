@@ -21,7 +21,7 @@
   text-align: center;
   margin: 0 auto;
   padding: 36px 0 28px 0;
-  border-bottom: 1px solid $border-gray-light;
+  border-bottom: 1px solid $line-gray-4;
   cursor: pointer;
 
   &:hover {
@@ -63,7 +63,7 @@
 .page-footer__social {
   padding: 22px 0 22px 0;
   text-align: center;
-  border-bottom: 1px solid $border-gray-light;
+  border-bottom: 1px solid $line-gray-4;
 
   @media (min-width: $width-tablet) {
     border-bottom: none;

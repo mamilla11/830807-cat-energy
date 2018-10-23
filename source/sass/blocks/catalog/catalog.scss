@@ -4,7 +4,7 @@
 
 .catalog__title {
   padding: 14px 20px 28px 20px;
-  border-bottom: 1px solid $border-gray-light;
+  border-bottom: 1px solid $line-gray-6;
 
   @media (min-width: $width-tablet) {
     padding: 32px 30px 81px 30px;
@@ -101,7 +101,7 @@
 
 .catalog__addons-container {
   margin: 0 20px;
-  border-top: 1px solid $border-gray-light;
+  border-top: 1px solid $line-gray-6;
 
   @media (min-width: $width-tablet) {
     margin: 0 30px;

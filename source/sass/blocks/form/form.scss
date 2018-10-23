@@ -69,7 +69,7 @@
 .form__about {
   margin-bottom: 7px;
   padding-bottom: 24px;
-  border-bottom: 1px solid $border-gray-light;
+  border-bottom: 1px solid $line-gray-6;
 
   @media (min-width: $width-tablet) {
     margin-bottom: 72px;
@@ -87,10 +87,10 @@
 .form__goal {
   margin-bottom: 44px;
   padding: 0 0 25px 0;
-  border-bottom: 1px solid $border-gray-light;
+  border-bottom: 1px solid $line-gray-6;
 
   @media (min-width: $width-tablet) {
-    border: 1px solid $border-gray-light;
+    border: 1px solid $line-gray-6;
     padding: 0 0 32px 0;
     margin: 0 66px 98px 70px;
   }

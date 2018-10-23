@@ -51,12 +51,12 @@
 .link--underline {
   color: $text-dark;
   padding: 0;
-  border-bottom: 1px dotted $border-gray-darker;
+  border-bottom: 1px dotted $line-gray-2;
 
   @include text-style(16px, 20px);
 
   &:hover {
-    border-bottom: 1px solid $border-gray-dark;
+    border-bottom: 1px solid $line-gray-1;
   }
 
   &:active {

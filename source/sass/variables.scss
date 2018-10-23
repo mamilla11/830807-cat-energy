@@ -19,16 +19,12 @@ $bg-green: #68b738;
 $bg-white: #ffffff;
 $bg-black: #363636;
 
-$border-gray-dark: #989898;
-$border-gray-darker: #bebebe;
-$border-gray-lighter: #cdcdcd;
-$border-gray-light: #d9d9d9;
-$border-radio: #dedede;
-$border: #e6e6e6;
-
-$line: #dcdcdc;
+$line-gray-1: #989898;
+$line-gray-2: #bebebe;
 $line-gray-3: #cdcdcd;
-$line-gray-lightest: #e6e6e6;
+$line-gray-4: #d9d9d9;
+$line-gray-5: #dcdcdc;
+$line-gray-6: #e6e6e6; //$line-gray-lightest
 
 $input-idle: #e6e6e6;
 $input-hover: #cdcdcd;
@@ -47,3 +43,6 @@ $social-icon-fill-hover: #68b738;
 $input-icon-fill-idle: #222222;
 $input-icon-fill-active: #68b738;
 $input-icon-fill-error: #ff8282;
+
+$toggler-border-idle: #cecece;
+$toggler-border-active: #68b738;
