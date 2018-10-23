@@ -37,7 +37,7 @@ function resize() {
     range.classList.remove("slider__range--before");
     range.classList.remove("slider__range--after");
     toFiftyFiftyState();
-  } 
+  }
 }
 
 function toFiftyFiftyState() {
