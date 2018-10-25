@@ -3,6 +3,12 @@
   flex-wrap: wrap;
   align-items: center;
   align-content: center;
+
+  @media (min-width: $width-tablet) {
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+  }
 }
 
 .product__image {
@@ -14,9 +20,13 @@
 
   @media (min-width: $width-tablet) {
     align-items: flex-end;
-    padding-bottom: 33px;
+    padding-bottom: 28px;
     width: 100%;
     height: 130px;
+
+    & picture {
+      margin: 0 -40px 0 -40px; //to make IE11 happy
+    }
 
     & img {
       width: 324px;
@@ -25,6 +35,8 @@
   }
 
   @media (min-width: $width-desktop) {
+    padding-bottom: 33px;
+
     & img {
       width: 245px;
     }
@@ -39,7 +51,9 @@
   justify-content: flex-start;
 
   @media (min-width: $width-tablet) {
-    margin-bottom: 28px;
+    width: 100%;
+    justify-content: space-between;
+    margin-bottom: 30px;
     align-items: center;
   }
 
@@ -68,7 +82,7 @@
 
   @media (min-width: $width-desktop) {
     margin-top: 0;
-    margin-bottom: 16px;
+    margin-bottom: 18px;
   }
 }
 
