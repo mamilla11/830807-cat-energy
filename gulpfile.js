@@ -10,6 +10,7 @@ var rename = require("gulp-rename");
 var image = require("gulp-image");
 var webp = require("gulp-webp");
 var svgstore = require("gulp-svgstore");
+var posthtml = require("gulp-posthtml");
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
@@ -44,6 +45,11 @@ gulp.task("sprite", function () {
     .pipe(rename("sprite.svg"))
     .pipe(gulp.dest("build/img/vector"));
 });
+
+gulp.task("html", function() {
+  return gulp.src("source/*.html")
+    .pipe(gulp.dest("build"))
+})
 
 gulp.task("server", function () {
   server.init({
