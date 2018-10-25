@@ -44,7 +44,7 @@
   @media (min-width: $width-tablet) {
     margin: 2px 0 0 0;
     padding: 0;
-    width: 23%;
+    width: 150px;
     flex-shrink: 0;
     border-bottom: none;
   }
@@ -61,7 +61,7 @@
 }
 
 .page-footer__social {
-  padding: 22px 0 22px 0;
+  padding: 20px 82px 20px 72px;
   text-align: center;
   border-bottom: 1px solid $line-gray-4;
 
@@ -73,11 +73,11 @@
 }
 
 .page-footer__developer {
-  padding: 20px 0 20px 0;
+  padding: 22px 0 20px 0;
 
   @media (min-width: $width-tablet) {
     padding: 0;
     flex-shrink: 0;
-    width: 23%;
+    width: 164px;
   }
 }

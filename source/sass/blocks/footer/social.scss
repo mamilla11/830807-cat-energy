@@ -1,24 +1,28 @@
 .social {
-  display: inline-block;
-  width: 130px;
+  width: 126px;
 
   @include list-reset();
 
   @media (min-width: $width-tablet) {
-    width: 136px;
+    display: inline-block;
+    vertical-align: middle;
   }
 }
 
 .social__item {
   display: inline-block;
   vertical-align: middle;
-  margin: 0 30px 0 0;
+  margin: 0 35px 0 0;
 
   &:nth-child(3n) {
     margin-right: 0;
   }
 
   @include text-style(0, 0);
+
+  @media (min-width: $width-tablet) {
+    margin: 0 24px 0 0;
+  }
 }
 
 .social__link {
