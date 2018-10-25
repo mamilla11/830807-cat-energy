@@ -26,14 +26,14 @@
     content: "";
     width: 24px;
     height: 11px;
-    background: url("../img/icon-right-arrow-long.svg") no-repeat center;
+    background: url("../img/vector/icon-right-arrow-long.svg") no-repeat center;
     transform: translateY(-50%);
   }
 
   &:hover {
     &::after {
       width: 32px;
-      background: url("../img/icon-right-arrow-verylong.svg") no-repeat center;
+      background: url("../img/vector/icon-right-arrow-verylong.svg") no-repeat center;
     }
   }
 
@@ -51,15 +51,19 @@
 .link--underline {
   color: $text-dark;
   padding: 0;
-  border-bottom: 1px dotted $border-gray-darker;
+  border-bottom: 1px dotted $line-gray-2;
 
   @include text-style(16px, 20px);
 
   &:hover {
-    border-bottom: 1px solid $border-gray-dark;
+    border-bottom: 1px solid $line-gray-1;
   }
 
   &:active {
     border: none;
+  }
+
+  @media (min-width: $width-tablet) {
+    @include text-style(20px, 20px);
   }
 }

@@ -1,6 +1,7 @@
 .input {
+  position: relative;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   margin-top: 16px;
 
   @media (min-width: $width-tablet) {
@@ -16,8 +17,8 @@
   font-family: $font-oswald;
   text-transform: uppercase;
   color: $text-darker;
-  white-space: nowrap;
   padding: 13px 0 12px 0;
+  max-width: 130px;
 
   @include text-style(16px, 18px);
 
@@ -39,8 +40,27 @@
   box-shadow: 0 0 0 1px $input-idle;
   outline: none;
 
+  &--email,
+  &--phone {
+    padding-right: 45px;
+  }
+
+  &:invalid,
+  &--error {
+    box-shadow: 0 0 0 2px $input-error;
+  }
+
+  &:invalid + .input__icon,
+  &--error + .input__icon {
+    fill: $input-icon-fill-error;
+  }
+
   &:hover {
     box-shadow: 0 0 0 1px $input-hover;
+  }
+
+  &:hover + .input__icon {
+    fill: $input-icon-fill-idle;
   }
 
   &:active,
@@ -48,8 +68,9 @@
     box-shadow: 0 0 0 2px $input-active;
   }
 
-  &--error {
-    box-shadow: 0 0 0 2px $input-error;
+  &:active + .input__icon,
+  &:focus + .input__icon {
+    fill: $input-icon-fill-active;
   }
 
   @include text-style(16px, 18px);
@@ -75,12 +96,12 @@
   @media (min-width: $width-tablet) {
     &--email {
       margin-left: 20px;
-      padding: 11px 40px 11px 18px;
+      padding: 11px 50px 11px 18px;
     }
 
     &--phone {
       margin-left: 14px;
-      padding: 11px 40px 11px 18px;
+      padding: 11px 50px 11px 18px;
     }
   }
 
@@ -89,5 +110,19 @@
     &--phone {
       width: 485px;
     }
+  }
+}
+
+.input__icon {
+  position: absolute;
+  display: block;
+  top: 50%;
+  right: 13px;
+  transform: translateY(-50%);
+  width: 20px;
+  fill: $input-icon-fill-idle;
+
+  @media (min-width: $width-tablet) {
+    right: 18px;
   }
 }

@@ -11,7 +11,7 @@
     transform: translateX(-50%);
     width: 30px;
     height: 30px;
-    background-image: url("../img/icon-plus-mobile.svg");
+    background-image: url("../img/vector/icon-plus-mobile.svg");
     opacity: 0.2;
   }
 
@@ -23,7 +23,7 @@
       top: 52px;
       width: 60px;
       height: 60px;
-      background-image: url("../img/icon-plus.svg");
+      background-image: url("../img/vector/icon-plus.svg");
     }
   }
 }
@@ -50,7 +50,7 @@
 
   @media (min-width: $width-tablet) {
     &--large {
-      padding-top: 160px;
+      padding-top: 164px;
       padding-bottom: 25px;
       width: 138px;
       margin: 0 auto;
@@ -63,6 +63,12 @@
       width: 170px;
 
       @include text-style(16px, 20px);
+    }
+  }
+
+  @media (min-width: $width-desktop) {
+    &--large {
+      padding-top: 160px;
     }
   }
 }

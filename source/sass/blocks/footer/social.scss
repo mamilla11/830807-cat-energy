@@ -1,34 +1,67 @@
 .social {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  width: 130px;
-  list-style: none;
-  padding: 0;
-  margin: 0 auto;
+  display: inline-block;
+  vertical-align: middle;
+  width: 126px;
+
+  @include list-reset();
 }
 
 .social__item {
   display: inline-block;
   vertical-align: middle;
+  margin: 0 35px 0 0;
+
+  &:nth-child(3n) {
+    margin-right: 0;
+  }
 
   @include text-style(0, 0);
+
+  @media (min-width: $width-tablet) {
+    margin: 0 24px 0 0;
+  }
 }
 
-.social__item--vk {
+.social__link {
+  &:hover .social__icon {
+    fill: $social-icon-fill-hover;
+  }
+
+  &:active {
+    opacity: 0.3;
+  }
+}
+
+.social__icon {
+  fill: $social-icon-fill-idle;
+}
+
+.social__icon--vk {
   width: 22px;
   height: 12px;
-  background-image: url("http://placehold.it/22x12");
+
+  @media (min-width: $width-tablet) {
+    width: 30px;
+    height: 16px;
+  }
 }
 
-.social__item--inst {
+.social__icon--insta {
   width: 16px;
   height: 16px;
-  background-image: url("http://placehold.it/16x16");
+
+  @media (min-width: $width-tablet) {
+    width: 23px;
+    height: 23px;
+  }
 }
 
-.social__item--fb {
+.social__icon--fb {
   width: 10px;
   height: 19px;
-  background-image: url("http://placehold.it/10x19");
+
+  @media (min-width: $width-tablet) {
+    width: 14px;
+    height: 28px;
+  }
 }

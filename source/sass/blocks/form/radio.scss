@@ -10,9 +10,9 @@
 }
 
 .radio__label {
-  white-space: nowrap;
+  display: block;
   position: relative;
-  padding: 4px 0 4px 45px;
+  padding: 2px 0 0 45px;
   cursor: pointer;
 
   @include text-style(16px, 18px);
@@ -72,5 +72,15 @@
 }
 
 .radio__button:focus + .radio__label {
-  outline: 1px dotted $radio-border-hover;
+  outline: none;
+}
+
+.radio__button:focus + .radio__label::before {
+  box-shadow: 0 0 0 8px white,
+    0 0 0 9px $input-active;
+
+  @media (min-width: $width-tablet) {
+    box-shadow: 0 0 0 10px white,
+      0 0 0 11px $input-active;
+  }
 }

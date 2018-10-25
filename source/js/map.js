@@ -1,43 +1,67 @@
 var myMap;
-var small_viewport  = 768;
-var large_viewport  = 1300;
 
+const tablet_viewport = 768;
+const desktop_viewport = 1300;
+const placemarkImage = "img/raster/map-pin.png";
+
+window.addEventListener("resize", update);
 ymaps.ready(init);
 
 function init () {
+  myMap = new ymaps.Map('map', {
+    center: [59.93863106417265,30.3230545],
+    zoom: 18
+    }, {
+      searchControlProvider: 'yandex#search'
+    });
+
+  update();
+}
+
+function update() {
   var mapCenterLongLat;
   var placemarkLongLat;
   var placemarkSize;
+  var placemarkOfst;
+  var mapZoom;
 
-  const viewport = document.documentElement.clientWidth || window.innerWidth;
+  const viewport = window.innerWidth;
 
-  if (viewport <= small_viewport) {
+  if (viewport < tablet_viewport) {
     placemarkSize = [62, 53];
+    placemarkOfst = [-31, -43];
     mapCenterLongLat = [59.93863106417265,30.3230545];
     placemarkLongLat = [59.93863106417265,30.3230545];
+    mapZoom = 17;
   }
+  else if (viewport < desktop_viewport) {
+    placemarkSize = [124, 106];
+    placemarkOfst = [-61, -53];
+    mapCenterLongLat = [59.93863106417265,30.3230545];
+    placemarkLongLat = [59.93863106417265,30.3230545];
+    mapZoom = 18;
+  }
+
   else {
     placemarkSize = [124, 106];
-    mapCenterLongLat = [59.93863106417265,30.3230545];
+    placemarkOfst = [-57, -53];
+    mapCenterLongLat = [59.93863106417265,30.319449611083996];
     placemarkLongLat = [59.93863106417265,30.3230545];
+    mapZoom = 17;
   }
 
-  myMap = new ymaps.Map('map', {
+  myMap.setCenter(mapCenterLongLat, mapZoom, 'map');
 
-  center: [59.93863106417265,30.3230545],
-  zoom: 17
-  }, {
-    searchControlProvider: 'yandex#search'
-  }),
-
-  myPlacemark = new ymaps.Placemark([59.93863106417265,30.3230545], {
-    hintContent: "ул. Большая Конюшенная 19/8, Санкт-Петербург",
+  var myPlacemark = new ymaps.Placemark(placemarkLongLat, {
+      hintContent: "ул. Большая Конюшенная 19/8, Санкт-Петербург",
     }, {
-    iconLayout: "default#image",
-    iconImageHref: "img/map-pin.png",
-    iconImageSize: [62, 53],
-    iconImageOffset: [-31, -25]
-  });
+      iconLayout: "default#image",
+      iconImageHref: placemarkImage,
+      iconImageSize: placemarkSize,
+      iconImageOffset: placemarkOfst
+    }
+  );
 
+  myMap.geoObjects.removeAll();
   myMap.geoObjects.add(myPlacemark);
 }
