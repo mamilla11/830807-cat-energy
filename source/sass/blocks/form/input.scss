@@ -1,7 +1,7 @@
 .input {
   position: relative;
   display: flex;
-  align-items: baseline;
+  align-items: center;
   margin-top: 16px;
 
   @media (min-width: $width-tablet) {
@@ -17,8 +17,8 @@
   font-family: $font-oswald;
   text-transform: uppercase;
   color: $text-darker;
-  white-space: nowrap;
   padding: 13px 0 12px 0;
+  max-width: 130px;
 
   @include text-style(16px, 18px);
 

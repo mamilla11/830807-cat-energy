@@ -10,9 +10,9 @@
 }
 
 .radio__label {
-  white-space: nowrap;
+  display: block;
   position: relative;
-  padding: 4px 0 4px 45px;
+  padding: 2px 0 0 45px;
   cursor: pointer;
 
   @include text-style(16px, 18px);
