@@ -1,12 +1,9 @@
 .social {
+  display: inline-block;
+  vertical-align: middle;
   width: 126px;
 
   @include list-reset();
-
-  @media (min-width: $width-tablet) {
-    display: inline-block;
-    vertical-align: middle;
-  }
 }
 
 .social__item {
