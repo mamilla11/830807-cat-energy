@@ -7,6 +7,8 @@ var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var csso = require("gulp-csso");
 var rename = require("gulp-rename");
+var image = require("gulp-image");
+var webp = require("gulp-webp")
 var server = require("browser-sync").create();
 
 gulp.task("css", function () {
@@ -18,9 +20,21 @@ gulp.task("css", function () {
     ]))
     .pipe(gulp.dest("source/css"))
     .pipe(csso())
-    .pipe(rename("style.min.css"))
+    .pipe(rename(suffix=".min"))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
+});
+
+gulp.task("images", function() {
+  return gulp.src("source/img/**/*.{png,jpg,svg}")
+    .pipe(image())
+    .pipe(gulp.dest("build/img"));
+});
+
+gulp.task("webp", function() {
+  return gulp.src("source/img/raster/*.{png, jpg}")
+    .pipe(webp({quality: 90}))
+    .pipe(gulp.dest("build/img/webp/"));
 });
 
 gulp.task("server", function () {
