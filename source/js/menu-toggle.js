@@ -1,5 +1,5 @@
-const menu_toggle = document.querySelector(".page-header__menu-toggle");
-const navigation  = document.querySelector(".page-header__navigation");
+var menu_toggle = document.querySelector(".page-header__menu-toggle");
+var navigation  = document.querySelector(".page-header__navigation");
 
 if (menu_toggle.classList.contains("page-header__menu-toggle--no-js")) {
     menu_toggle.classList.remove("page-header__menu-toggle--no-js");
