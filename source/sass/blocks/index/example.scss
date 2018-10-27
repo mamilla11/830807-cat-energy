@@ -11,7 +11,7 @@
 
 .example__wrapper {
   @media (min-width: $width-desktop) {
-    background-image: linear-gradient(to right, $bg-gray 50%, $bg-darkgray 50%);
+    background-image: linear-gradient(to right, $bg-gray 48%, $bg-darkgray 48%);
   }
 }
 
@@ -48,7 +48,7 @@
 
   @media (min-width: $width-desktop) {
     max-width: $width-desktop;
-    margin: 0 auto 75px auto;
+    margin: 8px auto 75px auto;
     padding: 0 40px;
     box-sizing: border-box;
   }

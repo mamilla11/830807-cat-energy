@@ -16,10 +16,7 @@ $image-tablet-height: 517px;
 
   @media (min-width: $width-desktop) {
     position: relative;
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    margin: -54px 0 0 92px;
+    margin: -188px 0 0 92px;
     background: transparent;
     padding-bottom: 0;
   }
@@ -37,7 +34,6 @@ $image-tablet-height: 517px;
   }
 
   @media (min-width: $width-desktop) {
-    margin-top: -138px;
     height: 100%;
   }
 }
@@ -61,7 +57,7 @@ $image-tablet-height: 517px;
   @media (min-width: $width-desktop) {
     width: 53%;
     height: 100%;
-    background-image: linear-gradient(to bottom, $bg-white 25.8%, $bg-gray 25.8%);
+    background-image: linear-gradient(to bottom, $bg-white 188px, $bg-gray 188px);
   }
 }
 
@@ -92,7 +88,8 @@ $image-tablet-height: 517px;
     margin-top: 40px;
     margin-left: 40px;
     position: absolute;
-    top: 400px;
+    top: 516px;
+    left: 40px;
 
   }
 }
