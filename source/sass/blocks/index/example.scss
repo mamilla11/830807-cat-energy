@@ -7,16 +7,18 @@
     padding: 5px 0 0 0;
     background-color: $bg-white;
   }
+}
 
+.example__wrapper {
   @media (min-width: $width-desktop) {
-    background-image: linear-gradient(to bottom, $bg-white 23%, transparent 23%),
-      linear-gradient(to right, $bg-gray 50%, $bg-darkgray 50%);
+    background-image: linear-gradient(to right, $bg-gray 50%, $bg-darkgray 50%);
   }
 }
 
 .example__container {
   @media (min-width: $width-desktop) {
     display: flex;
+    align-items: stretch;
     max-width: $width-desktop;
     margin: 0 auto;
   }
@@ -25,6 +27,7 @@
 .example__content {
   @media (min-width: $width-desktop) {
     width: 47%;
+    padding-top: 52px;
   }
 }
 
@@ -44,8 +47,10 @@
   }
 
   @media (min-width: $width-desktop) {
+    max-width: $width-desktop;
+    margin: 0 auto 75px auto;
     padding: 0 40px;
-    margin: 0 0 146px 0;
+    box-sizing: border-box;
   }
 }
 
@@ -63,11 +68,11 @@
   @media (min-width: $width-desktop) {
     width: 438px;
     padding: 0 40px;
-    margin-bottom: 64px;
+    margin-bottom: 62px;
   }
 }
 
-.example__wrapper {
+.example__result {
   padding: 0 20px;
 
   @media (min-width: $width-tablet) {
