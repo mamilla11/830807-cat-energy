@@ -34,7 +34,8 @@
   flex-grow: 1;
   color: $text-gray;
   margin-left: 14px;
-  padding: 12px 13px;
+  padding: 0 13px;
+  height: 42px;
   min-width: 172px;
   box-sizing: border-box;
   border: none;
@@ -80,17 +81,18 @@
     text-transform: uppercase;
     font-family: $font-oswald;
 
-    @include text-style(16px, 18px);
+    font-size: 16px;
   }
 
   @media (min-width: $width-tablet) {
     margin-left: 18px;
-    padding: 12px 18px;
+    padding: 0 18px;
+    height: 54px;
 
     @include text-style(20px, 20px);
 
     &::placeholder {
-      @include text-style(20px, 20px);
+      font-size: 20px;
     }
 
     &--email {
