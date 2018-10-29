@@ -25,7 +25,7 @@
   @media (min-width: $width-tablet) {
     margin-top: 30px;
     padding: 0 40px 44px 40px;
-    width: 322px;
+    width: 324px;
 
     @include text-style(20px, 30px);
   }
@@ -39,7 +39,7 @@
   display: inline-block;
   vertical-align: middle;
   max-width: 182px;
-  margin: -18px 0 8px -20px;
+  margin: -19px 0 8px -20px;
   background-color: $bg-white;
   padding: 0 20px;
 
@@ -85,8 +85,8 @@
 }
 
 .form__goal {
-  margin-bottom: 44px;
-  padding: 0 0 25px 0;
+  margin-bottom: 42px;
+  padding: 0 0 28px 0;
   border-bottom: 1px solid $line-gray-6;
 
   @media (min-width: $width-tablet) {
@@ -107,7 +107,7 @@
 }
 
 .form__contacts-wrapper {
-  margin: 26px 0 43px 0;
+  margin: 26px 0 44px 0;
 
   @media (min-width: $width-tablet) {
     margin: 68px 0 90px 0;
@@ -148,7 +148,7 @@
 }
 
 .form__extra-wrapper {
-  margin: 24px 0 36px 0;
+  margin: 24px 0 38px 0;
   padding: 0;
 
   @media (min-width: $width-tablet) {
@@ -196,7 +196,7 @@
   }
 
   @media (min-width: $width-tablet) {
-    padding: 13px 15px 11px 18px;
+    padding: 13px 15px 11px 19px;
     height: 172px;
 
     @include text-style(20px, 20px);
@@ -207,7 +207,7 @@
   }
 
   @media (min-width: $width-desktop) {
-    padding: 16px 18px;
+    padding: 14px 18px;
     height: 172px;
   }
 }
