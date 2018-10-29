@@ -86,15 +86,23 @@
 }
 
 .promo__image-wrapper {
+  width: 280px;
+  height: 271px;
+
   @media (min-width: $width-tablet) {
+    width: 708px;
+    height: 605px;
     margin-top: -80px;
     margin-left: -85px;
+    margin-bottom: 5px;
     align-self: center;
     order: 2;
     z-index: 1;
   }
 
   @media (min-width: $width-desktop) {
+    width: 552px;
+    height: 499px;
     margin-top: -32.5%;
     margin-left: 13.5%;
   }
@@ -119,7 +127,7 @@
   align-self: stretch;
 
   @media (min-width: $width-tablet) {
-    padding: 17px 27px;
+    padding: 17px 24px;
     align-self: flex-start;
     margin-top: 20px;
     order: 1;

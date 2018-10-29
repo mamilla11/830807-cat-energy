@@ -1,8 +1,8 @@
 var myMap;
 
-const tablet_viewport = 768;
-const desktop_viewport = 1300;
-const placemarkImage = "img/raster/map-pin.png";
+var tablet_viewport = 768;
+var desktop_viewport = 1300;
+var placemarkImage = "img/raster/map-pin.png";
 
 window.addEventListener("resize", update);
 ymaps.ready(init);
@@ -25,7 +25,7 @@ function update() {
   var placemarkOfst;
   var mapZoom;
 
-  const viewport = window.innerWidth;
+  var viewport = window.innerWidth;
 
   if (viewport < tablet_viewport) {
     placemarkSize = [62, 53];

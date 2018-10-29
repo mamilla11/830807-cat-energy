@@ -1,8 +1,8 @@
 /*******************************************************************
 *** VARIABLES ******************************************************
 ********************************************************************/
-const tabletWidth = 768;
-const desktopWidth = 1300;
+var tabletWidth = 768;
+var desktopWidth = 1300;
 var range = document.querySelector(".slider__range");
 var toggler = document.querySelector(".slider__toggler");
 var beforeImage = document.querySelector(".slider__resizable");

@@ -15,8 +15,11 @@ $image-tablet-height: 517px;
   }
 
   @media (min-width: $width-desktop) {
-    margin: -54px 0 0 90px;
-    background-image: linear-gradient(to bottom, $bg-white 28.9%, $bg-darkgray 28.9%);
+    position: relative;
+    width: 690px;
+    margin: -188px 0 0 0;
+    background: transparent;
+    padding-bottom: 0;
   }
 }
 
@@ -29,6 +32,11 @@ $image-tablet-height: 517px;
     width: $image-tablet-width;
     height: $image-tablet-height;
     margin: 0 auto;
+  }
+
+  @media (min-width: $width-desktop) {
+    margin: 0;
+    height: 100%;
   }
 }
 
@@ -50,7 +58,8 @@ $image-tablet-height: 517px;
 
   @media (min-width: $width-desktop) {
     width: 53%;
-    background-image: linear-gradient(to bottom, $bg-white 28.9%, $bg-gray 28.9%);
+    height: 100%;
+    background-image: linear-gradient(to bottom, $bg-white 188px, $bg-gray 188px);
   }
 }
 
@@ -80,6 +89,9 @@ $image-tablet-height: 517px;
   @media (min-width: $width-desktop) {
     margin-top: 40px;
     margin-left: 40px;
+    position: absolute;
+    top: 516px;
+    left: 40px;
   }
 }
 

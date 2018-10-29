@@ -173,7 +173,9 @@
   }
 
   @media (min-width: $width-desktop) {
+    width: 100%;
     margin: 40px 0 10px 0;
+    box-sizing: border-box;
   }
 }
 

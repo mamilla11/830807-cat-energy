@@ -14,6 +14,7 @@
 }
 
 .input__label {
+  flex-shrink: 0;
   font-family: $font-oswald;
   text-transform: uppercase;
   color: $text-darker;
@@ -32,8 +33,9 @@
   text-transform: uppercase;
   flex-grow: 1;
   color: $text-gray;
-  margin-left: 12px;
-  padding: 12px 16px;
+  margin-left: 14px;
+  padding: 0 13px;
+  height: 42px;
   min-width: 172px;
   box-sizing: border-box;
   border: none;
@@ -79,29 +81,28 @@
     text-transform: uppercase;
     font-family: $font-oswald;
 
-    @include text-style(16px, 18px);
+    font-size: 16px;
   }
 
   @media (min-width: $width-tablet) {
     margin-left: 18px;
-    padding: 12px 18px;
+    padding: 0 18px;
+    height: 54px;
 
     @include text-style(20px, 20px);
 
     &::placeholder {
-      @include text-style(20px, 20px);
+      font-size: 20px;
     }
-  }
 
-  @media (min-width: $width-tablet) {
     &--email {
       margin-left: 20px;
-      padding: 11px 50px 11px 18px;
+      padding: 11px 50px 11px 20px;
     }
 
     &--phone {
       margin-left: 14px;
-      padding: 11px 50px 11px 18px;
+      padding: 11px 50px 11px 20px;
     }
   }
 
