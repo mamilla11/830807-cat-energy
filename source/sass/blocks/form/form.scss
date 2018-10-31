@@ -110,7 +110,7 @@
   margin: 26px 0 44px 0;
 
   @media (min-width: $width-tablet) {
-    margin: 68px 0 90px 0;
+    margin: 68px 0 85px 0;
     padding: 0 35px 0 40px;
   }
 
@@ -120,7 +120,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 0;
-    margin: 50px 0 89px 0;
+    margin: 50px 0 87px 0;
   }
 }
 
@@ -177,6 +177,7 @@
   border: none;
   box-shadow: 0 0 0 1px $input-idle;
   outline: none;
+  resize: vertical;
 
   &:hover {
     box-shadow: 0 0 0 1px $input-hover;

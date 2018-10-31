@@ -20,7 +20,7 @@ var uglify = require("gulp-uglify")
 var server = require("browser-sync").create();
 
 gulp.task("copy", function() {
-  return gulp.src("source/fonts/**/*.{woff, woff2}", {
+  return gulp.src("source/fonts/**/*.{woff,woff2}", {
     base: "source"
     })
     .pipe(gulp.dest("build"));

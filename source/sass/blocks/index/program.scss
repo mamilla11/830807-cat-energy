@@ -26,9 +26,40 @@
 
 .program__item {
   position: relative;
-  padding: 25px 22px 21px 20px;
+  padding: 25px 22px 20px 20px;
   margin-bottom: 19px;
   background-color: $bg-gray;
+
+  &::before {
+    position: absolute;
+    content: "";
+    top: 28px;
+    left: 22px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background: $bg-green;
+    border-radius: 50%;
+  }
+
+  &--slim::after {
+    position: absolute;
+    content: url("../img/vector/icon-cat-slim.svg");
+    top: 40px;
+    left: 30px;
+    width: 35px;
+    height: 49px;
+    margin-top: -15px;
+  }
+
+  &--pro::after {
+    position: absolute;
+    content: url("../img/vector/icon-cat-pro.svg");
+    top: 38px;
+    left: 12px;
+    width: 67px;
+    height: 28px;
+  }
 
   @media (min-width: $width-tablet) {
     padding: 75px 283px 64px 52px;
@@ -36,6 +67,34 @@
 
     &:last-child {
       padding-right: 315px;
+    }
+
+    &::before {
+      top: 50%;
+      transform: translateY(-50%);
+      right: 60px;
+      left: auto;
+      width: 200px;
+      height: 200px;
+    }
+
+    &--slim::after {
+      top: 50%;
+      transform: translateY(-50%);
+      right: 90px;
+      left: auto;
+      width: 140px;
+      height: 194px;
+      margin-top: -15px;
+    }
+
+    &--pro::after {
+      top: 50%;
+      transform: translateY(-50%);
+      right: 25px;
+      left: auto;
+      width: 268px;
+      height: 112px;
     }
   }
 
@@ -50,91 +109,30 @@
     &:last-child {
       padding-right: 50px;
     }
-  }
-}
 
-.program__title {
-  display: flex;
-  align-items: center;
-}
-
-.program__icon {
-  position: relative;
-  display: inline-block;
-  vertical-align: middle;
-  margin-right: 19px;
-  margin-left: 2px;
-  width: 50px;
-  height: 50px;
-  background: $bg-green;
-  border-radius: 50%;
-  flex-shrink: 0;
-
-  &::before {
-    content: "";
-    position: absolute;
-    left: 25px;
-    top: 50%;
-    transform: translate(-50%, -50%);
-  }
-
-  &--slim::before {
-    width: 35px;
-    height: 49px;
-    top: 22px;
-    background: url("../img/vector/icon-cat-slim.svg") no-repeat center;
-  }
-
-  &--pro::before {
-    width: 67px;
-    height: 28px;
-    background: url("../img/vector/icon-cat-pro.svg") no-repeat center;
-  }
-
-  @media (min-width: $width-tablet) {
-    position: absolute;
-    right: 40px;
-    top: 90px;
-    width: 200px;
-    height: 200px;
-
-    &--slim::before {
-      width: 140px;
-      height: 194px;
-      top: 87px;
-      left: 50%;
+    &::before {
+      top: 95px;
+      right: auto;
+      left: 50px;
+      width: 100px;
+      height: 100px;
     }
 
-    &--pro::before {
-      width: 268px;
-      height: 112px;
-      top: 98px;
-      left: 50%;
-    }
-  }
-
-  @media (min-width: $width-desktop) {
-    position: relative;
-    top: 0;
-    left: 0;
-    width: 100px;
-    height: 100px;
-    margin-right: 62px;
-    margin-left: 0;
-    margin-top: 3px;
-
-    &--slim::before {
+    &--slim::after {
+      top: 86px;
+      right: auto;
+      left: 65px;
       width: 70px;
       height: 97px;
-      top: 44px;
-      left: 48px;
+      margin-top: 0;
     }
 
-    &--pro::before {
+    &--pro::after {
+      top: 96px;
+      right: auto;
+      left: 35px;
       width: 134px;
       height: 56px;
-      top: 50px;
-      left: 49px;
     }
   }
 }
@@ -143,6 +141,8 @@
   display: inline-block;
   vertical-align: middle;
   margin: 0;
+  padding: 7px 0 8px 70px;
+  padding-bottom: 8px;
   color: $text-dark;
   text-transform: uppercase;
   font-family: $font-oswald;
@@ -150,9 +150,13 @@
   @include text-style(24px, 37px);
 
   @media (min-width: $width-tablet) {
-    padding-left: 0;
+    padding: 0;
 
     @include text-style(36px, 37px);
+  }
+
+  @media (min-width: $width-desktop) {
+    padding: 32px 0 34px 162px;
   }
 }
 

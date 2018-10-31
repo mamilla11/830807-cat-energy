@@ -7,12 +7,12 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-top: 56px;
+    padding-top: 50px;
     padding-bottom: 56px;
   }
 
   @media (min-width: $width-desktop) {
-    padding-top: 54px;
+    padding-top: 48px;
   }
 }
 
@@ -61,7 +61,7 @@
 }
 
 .page-footer__social {
-  padding: 20px 0 20px 0;
+  padding: 12px 0;
   text-align: center;
   border-bottom: 1px solid $line-gray-4;
 
@@ -73,7 +73,7 @@
 }
 
 .page-footer__developer {
-  padding: 22px 0 20px 0;
+  padding: 22px 0 28px 0;
 
   @media (min-width: $width-tablet) {
     padding: 0;
