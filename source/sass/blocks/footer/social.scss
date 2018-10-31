@@ -12,18 +12,10 @@
   vertical-align: middle;
   margin: 10px 19px;
 
-  &:nth-child(3n) {
-    margin-right: 30px;
-  }
-
   @include text-style(0, 0);
 
   @media (min-width: $width-tablet) {
     margin: 10px 14px;
-
-    &:nth-child(3n) {
-      margin-right: 14px;
-    }
   }
 }
 
